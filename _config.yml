@@ -1,0 +1,23 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "" # the name of your site, e.g. ACME Corp.
+# include: [index.html]
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+kramdown:
+ input: GFM
+ hard_wrap: false
+ mathjax: false
+
+menu_pages:
+  home: /
+  schedule: /schedule
+  qna: /q-a
+  travel: /travel
+  things_to_do: /things_to_do

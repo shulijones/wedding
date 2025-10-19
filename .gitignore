@@ -1,0 +1,15 @@
+_site
+_site/*
+.DS_Store
+.sass-cache
+.sass-cache/*
+Gemfile.lock
+settings.json
+node_modules
+node_modules/*
+package-lock.json
+scrape
+updated_files
+scrape/*
+updated_files/*
+nyt_games/deprecated/*
