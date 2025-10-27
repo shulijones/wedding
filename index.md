@@ -48,7 +48,6 @@ layout: main
 <div class="css-wedding_day_content">
     
     
-    <!-- CONTENT START -->
     <style>
         .css-info_table {
             margin: 0;
@@ -216,7 +215,5 @@ layout: main
             </div>
         </div>
     </div>
-
-    <!-- CONTENT END -->
 
 </div>
