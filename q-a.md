@@ -3,7 +3,7 @@ layout: main
 ---
 
 <style>
-    .css-1q5ljpx {
+    .question {
         margin: 24px 0 0 0;
         text-align: center;
         font-family: Roboto;
@@ -15,34 +15,34 @@ layout: main
     }
 
     @media (max-width: 640px) {
-        .css-1q5ljpx {
+        .question {
             font-size: calc(19px * 0.75);
         }
     }
 
     @media(max-width: 640px) {
-        .css-1q5ljpx {
+        .question {
             font-size: calc(19px * 0.82);
         }
     }
 
     @media (min-width: 768px) {
-        .css-1q5ljpx {
+        .question {
             text-align: center;
         }
 
-        .verticalLayout.homePage .css-1q5ljpx {
+        .verticalLayout.homePage .question {
             text-align: left;
         }
     }
 
     @media (max-width: 767px) {
-        .css-1q5ljpx {
+        .question {
             padding: 0 16px;
         }
     }
 
-    .css-1mbml5b {
+    .answer {
         padding: 0;
         margin: 1.1em auto;
         max-width: 550px;
@@ -62,76 +62,75 @@ layout: main
     }
 
     @media (max-width: 640px) {
-        .css-1mbml5b {
+        .answer {
             font-size: calc(14px * 0.875);
         }
     }
 
     @media(max-width: 640px) {
-        .css-1mbml5b {
+        .answer {
             font-size: calc(14px * 0.9);
         }
     }
 
     @media (min-width: 720px) {
-        .css-1mbml5b {
+        .answer {
             max-width: 720px;
         }
     }
 
     @media (max-width: 768px) {
-        .css-1mbml5b {
+        .answer {
             padding: 0 16px;
         }
     }
 
-    .css-1mbml5b strong {
+    .answer strong {
         font-weight: bolder !important;
     }
 
-    .css-1mbml5b em {
+    .answer em {
         font-style: italic !important;
     }
 
-    .css-1mbml5b a {
+    .answer a {
         -webkit-text-decoration: underline;
         text-decoration: underline;
     }
 
-    .css-1mbml5b .ql-align-right {
+    .answer .ql-align-right {
         text-align: right;
     }
 
-    .css-1mbml5b .ql-align-center {
+    .answer .ql-align-center {
         text-align: center;
     }
 
-    .css-1mbml5b .ql-align-justify {
+    .answer .ql-align-justify {
         text-align: justify;
     }
 
     @media (max-width: 640px) {
-        .css-1mbml5b {
+        .answer {
             font-size: calc(14px * 0.875);
         }
     }
 
     @media(max-width: 640px) {
-        .css-1mbml5b {
+        .answer {
             font-size: calc(14px * 0.9);
         }
     }
 
-    .css-1mbml5b a {
+    .answer a {
         -webkit-text-decoration: underline;
         text-decoration: underline;
     }
 </style>
 
-<div class="css-pov3if">
-    <div class="QuestionItem" data-testid="question-item-149358729">
-        <div class="css-1oteowz"></div>
-        <h4 class="css-1q5ljpx">What is the dress code?</h4>
-        <div class="css-1mbml5b">TODO</div>
+<div>
+    <div>
+        <h4 class="question">What is the dress code?</h4>
+        <div class="answer">TODO</div>
     </div>
 </div>
