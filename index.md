@@ -46,8 +46,6 @@ layout: main
     }
 </style>
 <div class="css-wedding_day_content">
-    
-    
     <style>
         .css-info_table {
             margin: 0;
@@ -57,7 +55,6 @@ layout: main
             width: 100%;
             padding: 0;
         }
-
         .verticalLayout.homePage .css-info_table {
             margin-right: 2rem;
         }
@@ -79,7 +76,6 @@ layout: main
                 -ms-flex-align: center;
                 align-items: center;
             }
-
             .verticalLayout.homePage .css-wedding_data_info {
                 -webkit-align-items: flex-start;
                 -webkit-box-align: flex-start;
@@ -89,19 +85,16 @@ layout: main
                 text-align: left;
             }
         </style>
-
-
-
         <br/><br/>
-        <div data-testid="event-2130f758-c040-45c3-8976-baf491409385" class="css-wedding_data_info">
+        <div class="css-wedding_data_info">
             <style>
-                .css-15r1rym {
+                .main-page-info-block {
                     margin: 8px 0;
                 }
             </style>
-            <div class="css-15r1rym">
+            <div class="main-page-info-block">
                 <style>
-                    .css-1jbv6ok {
+                    .main-page-info-block-title {
                         line-height: 1;
                         margin: 32px 0 8px 0;
                         font-family: Abhaya Libre;
@@ -111,29 +104,23 @@ layout: main
                         font-weight: 600;
                         letter-spacing: 2px;
                     }
-
-                    .verticalLayout.homePage .css-1jbv6ok {
+                    .verticalLayout.homePage .main-page-info-block-title {
                         margin: 0 0 8px 0;
                     }
-
                     @media (max-width: 640px) {
-                        .css-1jbv6ok {
+                        .main-page-info-block-title {
                             font-size: calc(34px * 0.75);
                         }
                     }
-
                     @media(max-width: 640px) {
-                        .css-1jbv6ok {
+                        .main-page-info-block-title {
                             font-size: calc(34px * 0.85);
                         }
                     }
                 </style>
-
-
-
-                <h4 class="css-1jbv6ok">Wedding Day</h4>
+                <h4 class="main-page-info-block-title">Wedding Day</h4>
                 <style>
-                    .css-h4xxyd {
+                    .main-page-info-block-datetime {
                         margin: 8px 0;
                         font-family: Roboto;
                         letter-spacing: 2px;
@@ -142,25 +129,23 @@ layout: main
                         font-weight: normal;
                         text-transform: uppercase;
                     }
-
                     @media (max-width: 640px) {
-                        .css-h4xxyd {
+                        .main-page-info-block-datetime {
                             font-size: calc(19px * 0.75);
                         }
                     }
-
                     @media(max-width: 640px) {
-                        .css-h4xxyd {
+                        .main-page-info-block-datetime {
                             font-size: calc(19px * 0.82);
                         }
                     }
                 </style>
-                <!-- <div class="css-h4xxyd">November 14, 2026</div> -->
-                <div class="css-h4xxyd">4:00 PM</div>
+                <div class="main-page-info-block-datetime">November 14, 2026</div>
+                <!-- <div class="main-page-info-block-datetime">4:00 PM</div> -->
             </div>
-            <div class="css-15r1rym">
+            <div class="main-page-info-block">
                 <style>
-                    .css-ijhaoq {
+                    .main-page-info-block-location {
                         margin: 4px 0;
                         font-family: Roboto;
                         letter-spacing: 1px;
@@ -168,21 +153,19 @@ layout: main
                         font-size: 14px;
                         font-weight: normal;
                     }
-
                     @media (max-width: 640px) {
-                        .css-ijhaoq {
+                        .main-page-info-block-location {
                             font-size: calc(14px * 0.875);
                         }
                     }
-
                     @media(max-width: 640px) {
-                        .css-ijhaoq {
+                        .main-page-info-block-location {
                             font-size: calc(14px * 0.9);
                         }
                     }
                 </style>
-                <div class="css-ijhaoq">"Piedmont Community Hall"</div>
-                <div class="css-ijhaoq">711 Highland Ave, Piedmont, CA 94611</div>
+                <div class="main-page-info-block-location">"Piedmont Community Hall"</div>
+                <div class="main-page-info-block-location">711 Highland Ave, Piedmont, CA 94611</div>
                 <style>
                     .rsvp-button {
                         display: inline-block;
@@ -199,7 +182,6 @@ layout: main
                         background-color: transparent;
                         transition: background-color 0.3s, color 0.3s;
                     }
-
                     .rsvp-button:hover {
                         background-color: #617939;
                         color: #eeebdd;
