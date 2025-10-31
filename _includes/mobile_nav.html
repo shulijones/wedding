@@ -1,13 +1,13 @@
 <style>
     @media (min-width: 768px) {
-        .css-1s8mc50 {
+        .mobile-nav-container {
             display: none;
         }
     }
 </style>
-<div data-testid="mobile-nav-wrapper" class="css-1s8mc50">
+<div class="mobile-nav-container">
     <style>
-        .css-1s2avkl {
+        .mobile-nav {
             display: block;
             height: 40px;
             left: 8px;
@@ -19,9 +19,9 @@
             z-index: 19;
         }
     </style>
-    <div class="css-1s2avkl">
+    <div class="mobile-nav">
         <style>
-            .css-59byx {
+            .mobile-nav-open-button {
                 background: none;
                 border: none;
                 font-size: 10px;
@@ -41,9 +41,9 @@
                 -ms-flex-align: center;
                 align-items: center;
             }
-        </style><button data-testid="MobileNav__Button" class="css-59byx">
+        </style><button data-testid="MobileNav__Button" class="mobile-nav-open-button">
             <style>
-                .css-prysaa {
+                .mobile-nav-open-button-icon {
                     width: 24px;
                     height: 24px;
                     position: relative;
@@ -55,9 +55,9 @@
                     transition: 0.5s ease-in-out;
                 }
             </style>
-            <div data-testid="HamburgerIcon" class="css-prysaa">
+            <div class="mobile-nav-open-button-icon">
                 <style>
-                    .css-19okhcu {
+                    .mobile-nav-animation-1 {
                         display: block;
                         position: absolute;
                         height: 1.5px;
@@ -74,9 +74,9 @@
                         transition: 0.25s ease-in-out;
                         top: 4px;
                     }
-                </style><span class="css-19okhcu"></span>
+                </style><span class="mobile-nav-animation-1"></span>
                 <style>
-                    .css-1aplmaw {
+                    .mobile-nav-animation-2 {
                         display: block;
                         position: absolute;
                         height: 1.5px;
@@ -93,9 +93,9 @@
                         transition: 0.25s ease-in-out;
                         top: 12px;
                     }
-                </style><span class="css-1aplmaw"></span>
+                </style><span class="mobile-nav-animation-2"></span>
                 <style>
-                    .css-1suwc22 {
+                    .mobile-nav-animation-3 {
                         display: block;
                         position: absolute;
                         height: 1.5px;
@@ -112,9 +112,9 @@
                         transition: 0.25s ease-in-out;
                         top: 12px;
                     }
-                </style><span class="css-1suwc22"></span>
+                </style><span class="mobile-nav-animation-3"></span>
                 <style>
-                    .css-oebwqf {
+                    .mobile-nav-animation-4 {
                         display: block;
                         position: absolute;
                         height: 1.5px;
@@ -131,10 +131,10 @@
                         transition: 0.25s ease-in-out;
                         top: 20px;
                     }
-                </style><span class="css-oebwqf"></span>
+                </style><span class="mobile-nav-animation-4"></span>
             </div>
             <style>
-                .css-1wkn33 {
+                .mobile-nav-open-button-alt-text {
                     border: 0;
                     clip: rect(0 0 0 0);
                     height: 1px;
@@ -144,11 +144,11 @@
                     position: absolute;
                     width: 1px;
                 }
-            </style><span class="css-1wkn33">Menu Button</span>
+            </style><span class="mobile-nav-open-button-alt-text">Menu Button</span>
         </button>
     </div>
     <style>
-        .css-u26puv {
+        .mobile-page-title-container {
             height: 56px;
             left: 0;
             position: fixed;
@@ -170,9 +170,9 @@
             justify-content: center;
         }
     </style>
-    <div class="css-u26puv">
+    <div class="mobile-page-title-container">
         <style>
-            .css-ch388k {
+            .mobile-page-title {
                 -webkit-align-items: center;
                 -webkit-box-align: center;
                 -ms-flex-align: center;
@@ -195,21 +195,21 @@
             }
 
             @media (max-width: 640px) {
-                .css-ch388k {
+                .mobile-page-title {
                     font-size: calc(34px * 0.75);
                 }
             }
 
             @media(max-width: 640px) {
-                .css-ch388k {
+                .mobile-page-title {
                     font-size: calc(34px * 0.85);
                 }
             }
         </style>
-        <h2 data-testid="mobile-page-title" class="css-ch388k">E&amp;S</h2>
+        <h2 class="mobile-page-title">E&amp;S</h2>
     </div>
     <style>
-        .css-7gstzz {
+        .mobile-nav-bar-outer-container {
             left: 0;
             overflow: hidden;
             position: fixed;
@@ -222,17 +222,17 @@
             height: 0;
         }
     </style>
-    <nav role="navigation" class="css-7gstzz">
+    <nav role="navigation" class="mobile-nav-bar-outer-container">
         <style>
-            .css-nfosgx {
+            .mobile-nav-bar-inner-container {
                 padding-top: 56px;
                 height: 100vh;
                 overflow-y: auto;
             }
         </style>
-        <div class="css-nfosgx">
+        <div class="mobile-nav-bar-inner-container">
             <style>
-                .css-kxffhl {
+                .mobile-nav-bar-menu {
                     display: -webkit-box;
                     display: -webkit-flex;
                     display: -ms-flexbox;
@@ -250,69 +250,71 @@
                 }
             </style>
 
-<style>
-    .css-unselected_page {
-        font-family: Roboto;
-        letter-spacing: 1px;
-        color: #617939;
-        font-size: 14px;
-        font-weight: normal;
-        border-bottom: 2px solid transparent;
-        display: block;
-        letter-spacing: 2px;
-        line-height: 1;
-        margin: 0 auto;
-        padding: 8px 8px 6px;
-        -webkit-text-decoration: none;
-        text-decoration: none;
-        -webkit-transition: all 0.25s;
-        transition: all 0.25s;
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-    }
+            <style>
+                .css-unselected_page {
+                    font-family: Roboto;
+                    letter-spacing: 1px;
+                    color: #617939;
+                    font-size: 14px;
+                    font-weight: normal;
+                    border-bottom: 2px solid transparent;
+                    display: block;
+                    letter-spacing: 2px;
+                    line-height: 1;
+                    margin: 0 auto;
+                    padding: 8px 8px 6px;
+                    -webkit-text-decoration: none;
+                    text-decoration: none;
+                    -webkit-transition: all 0.25s;
+                    transition: all 0.25s;
+                    width: -webkit-fit-content;
+                    width: -moz-fit-content;
+                    width: fit-content;
+                }
 
-    @media (max-width: 640px) {
-        .css-unselected_page {
-            font-size: calc(14px * 0.875);
-        }
-    }
+                @media (max-width: 640px) {
+                    .css-unselected_page {
+                        font-size: calc(14px * 0.875);
+                    }
+                }
 
-    @media(max-width: 640px) {
-        .css-unselected_page {
-            font-size: calc(14px * 0.9);
-        }
-    }
-</style>
-            <ul class="css-kxffhl">
+                @media(max-width: 640px) {
+                    .css-unselected_page {
+                        font-size: calc(14px * 0.9);
+                    }
+                }
+            </style>
+            <ul class="mobile-nav-bar-menu">
                 <style>
-                    .css-221guv {
+                    .mobile-nav-bar-menu-item {
                         text-align: center;
                         width: 100%;
                         padding: 8px;
                     }
 
-                    .css-221guv:hover,
-                    .css-221guv:focus {
+                    .mobile-nav-bar-menu-item:hover,
+                    .mobile-nav-bar-menu-item:focus {
                         background-color: rgba(97, 121, 57, 10%);
                     }
                 </style>
-                <li class="css-221guv"><a class="css-7psywa"
-                    href="{{site.menu_pages.home}}"><span
-                    class="{% if page.name == 'index.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Today</span></a></li>
-                <li class="css-221guv"><a class="css-7psywa" rel="nofollow"
-                    href="{{site.menu_pages.schedule}}"><span
-                    class="{% if page.name == 'schedule.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Schedule</span>
+                <li class="mobile-nav-bar-menu-item"><a class="nav-menu-item-link" href="{{site.menu_pages.home}}"><span
+                            class="{% if page.name == 'index.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Today</span></a>
+                </li>
+                <li class="mobile-nav-bar-menu-item"><a class="nav-menu-item-link" rel="nofollow"
+                        href="{{site.menu_pages.schedule}}"><span
+                            class="{% if page.name == 'schedule.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Schedule</span>
                     </a></li>
-                <li class="css-221guv"><a class="css-7psywa" rel="nofollow"
-                    href="{{site.menu_pages.qna}}"><span
-                    class="{% if page.name == 'q-a.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Q &amp; A</span></a></li>
-                <li class="css-221guv"><a class="css-7psywa" rel="nofollow"
-                    href="{{site.menu_pages.travel}}"><span
-                    class="{% if page.name == 'travel.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Travel &amp; Lodging</span></a></li>
-                <li class="css-221guv"><a class="css-7psywa" rel="nofollow"
-                    href="{{site.menu_pages.things_to_do}}"><span
-                    class="{% if page.name == 'things_to_do.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Things to Do</span></a></li>
+                <li class="mobile-nav-bar-menu-item"><a class="nav-menu-item-link" rel="nofollow" href="{{site.menu_pages.qna}}"><span
+                            class="{% if page.name == 'q-a.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Q
+                            &amp; A</span></a></li>
+                <li class="mobile-nav-bar-menu-item"><a class="nav-menu-item-link" rel="nofollow"
+                        href="{{site.menu_pages.travel}}"><span
+                            class="{% if page.name == 'travel.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Travel
+                            &amp; Lodging</span></a></li>
+                <li class="mobile-nav-bar-menu-item"><a class="nav-menu-item-link" rel="nofollow"
+                        href="{{site.menu_pages.things_to_do}}"><span
+                            class="{% if page.name == 'things_to_do.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Things
+                            to Do</span></a></li>
             </ul>
         </div>
     </nav>
@@ -320,7 +322,7 @@
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const button = document.querySelector('[data-testid="MobileNav__Button"]');
-        const nav = document.querySelector('.css-7gstzz');
+        const nav = document.querySelector('.mobile-nav-bar-outer-container');
 
         button.addEventListener('click', function () {
             const isVisible = nav.style.height === '100vh';

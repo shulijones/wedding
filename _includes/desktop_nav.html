@@ -1,33 +1,33 @@
 <style>
-    .css-pussp3 {
+    .desktop-nav-container {
         display: none;
     }
 
     @media (min-width: 768px) {
-        .css-pussp3 {
+        .desktop-nav-container {
             display: inherit;
             width: 100%;
         }
     }
 </style>
-<div data-testid="desktop-nav-wrapper" class="css-pussp3">
+<div class="desktop-nav-container">
     <style>
-        .css-139b45m {
+        .desktop-nav {
             display: none;
             width: 100%;
             margin-top: 25px;
         }
 
         @media (min-width: 768px) {
-            .css-139b45m {
+            .desktop-nav {
                 display: block;
                 z-index: 1;
             }
         }
     </style>
-    <nav class="css-139b45m">
+    <nav class="desktop-nav">
         <style>
-            .css-1bpqnod {
+            .desktop-nav-menu-container {
                 display: -webkit-box;
                 display: -webkit-flex;
                 display: -ms-flexbox;
@@ -44,9 +44,9 @@
                 padding: 8px 16px;
             }
         </style>
-        <div class="css-1bpqnod">
+        <div class="desktop-nav-menu-container">
             <style>
-                .css-16kcklx {
+                .desktop-nav-menu {
                     display: -webkit-box;
                     display: -webkit-flex;
                     display: -ms-flexbox;
@@ -61,21 +61,21 @@
                     justify-content: center;
                 }
             </style>
-            <ul data-testid="desktop-nav-row-1" class="css-16kcklx">
+            <ul class="desktop-nav-menu">
                 <style>
-                    .css-haue6f {
+                    .desktop-nav-menu-item {
                         display: inline-block;
                         list-style: none;
                         padding: 0 8px;
                     }
                 </style>
-                <li class="css-haue6f">
+                <li class="desktop-nav-menu-item">
                     <style>
-                        .css-tv0uwv {
+                        .desktop-nav-menu-item-link {
                             margin: 0;
                             padding: 8px 0;
                         }
-                    </style><a class="css-7psywa css-tv0uwv" href="{{site.menu_pages.home}}">
+                    </style><a class="nav-menu-item-link desktop-nav-menu-item-link" href="{{site.menu_pages.home}}">
                         <style>
                             .css-selected_page {
                                 font-family: Roboto;
@@ -113,7 +113,7 @@
                         </style><span class="{% if page.name == 'index.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Today</span>
                     </a>
                 </li>
-                <li class="css-haue6f"><a class="css-7psywa css-tv0uwv" rel="nofollow"
+                <li class="desktop-nav-menu-item"><a class="nav-menu-item-link desktop-nav-menu-item-link" rel="nofollow"
                         href="{{site.menu_pages.schedule}}">
                         <style>
                             .unselected_desktop_page {
@@ -155,13 +155,11 @@
                             }
                         </style><span class="{% if page.name == 'schedule.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Schedule</span>
                     </a></li>
-                <li class="css-haue6f"><a class="css-7psywa css-tv0uwv" rel="nofollow"
+                <li class="desktop-nav-menu-item"><a class="nav-menu-item-link desktop-nav-menu-item-link" rel="nofollow"
                         href="{{site.menu_pages.qna}}"><span class="{% if page.name == 'q-a.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Q &amp; A</span></a></li>
-            </ul>
-            <ul data-testid="desktop-nav-row-2" class="css-16kcklx">
-                <li class="css-haue6f"><a class="css-7psywa css-tv0uwv" rel="nofollow"
+                <li class="desktop-nav-menu-item"><a class="nav-menu-item-link desktop-nav-menu-item-link" rel="nofollow"
                         href="{{site.menu_pages.travel}}"><span class="{% if page.name == 'travel.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Travel &amp; Lodging</span></a></li>
-                <li class="css-haue6f"><a class="css-7psywa css-tv0uwv" rel="nofollow"
+                <li class="desktop-nav-menu-item"><a class="nav-menu-item-link desktop-nav-menu-item-link" rel="nofollow"
                         href="{{site.menu_pages.things_to_do}}"><span class="{% if page.name == 'things_to_do.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Things to Do</span></a></li>
             </ul>
         </div>
