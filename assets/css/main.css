@@ -24,8 +24,6 @@
     text-decoration: none;
   }
   a:hover {
-    /* TODO - This doesn't seem to be working right now, 
-    I think it should underline navbar links when you hover on them */
     text-decoration: underline;
   }
   
