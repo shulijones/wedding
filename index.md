@@ -164,7 +164,7 @@ layout: main
                         }
                     }
                 </style>
-                <div class="main-page-info-block-location">"Piedmont Community Hall"</div>
+                <div class="main-page-info-block-location">Piedmont Community Hall</div>
                 <div class="main-page-info-block-location">711 Highland Ave, Piedmont, CA 94611</div>
                 <style>
                     .rsvp-button {
