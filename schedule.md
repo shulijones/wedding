@@ -34,7 +34,7 @@ layout: main
         text-align: center;
         font-family: Roboto;
         letter-spacing: 2px;
-        color: #617939;
+        color: #F1E5AC;
         font-size: 19px;
         font-weight: normal;
         text-transform: uppercase;
@@ -75,7 +75,7 @@ layout: main
         text-align: left;
         font-family: Roboto;
         letter-spacing: 1px;
-        color: #617939;
+        color: #F1E5AC;
         font-size: 14px;
         font-weight: normal;
     }

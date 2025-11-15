@@ -98,7 +98,7 @@ layout: main
                         line-height: 1;
                         margin: 32px 0 8px 0;
                         font-family: Abhaya Libre;
-                        color: #617939;
+                        color: #F1E5AC;
                         font-size: 34px;
                         text-transform: lowercase;
                         font-weight: 600;
@@ -124,7 +124,7 @@ layout: main
                         margin: 8px 0;
                         font-family: Roboto;
                         letter-spacing: 2px;
-                        color: #617939;
+                        color: #F1E5AC;
                         font-size: 19px;
                         font-weight: normal;
                         text-transform: uppercase;
@@ -149,7 +149,7 @@ layout: main
                         margin: 4px 0;
                         font-family: Roboto;
                         letter-spacing: 1px;
-                        color: #617939;
+                        color: #F1E5AC;
                         font-size: 14px;
                         font-weight: normal;
                     }
@@ -174,16 +174,16 @@ layout: main
                         font-family: Roboto, sans-serif;
                         font-size: 16px;
                         font-weight: 500;
-                        color: #617939;
+                        color: #F1E5AC;
                         text-decoration: none;
                         text-align: center;
-                        border: 2px solid #617939;
+                        border: 2px solid #F1E5AC;
                         border-radius: 17px;
                         background-color: transparent;
                         transition: background-color 0.3s, color 0.3s;
                     }
                     .rsvp-button:hover {
-                        background-color: #617939;
+                        background-color: #F1E5AC;
                         color: #eeebdd;
                         text-decoration: none;
                     }
