@@ -3,100 +3,66 @@
 
 {% include head.html %}
 
-<body><noscript data-union-html-insert-start=""></noscript>
-    <noscript data-union-html-insert-end=""></noscript>
-    <div id="__next">
-        <div>
-            <link rel="stylesheet"
-                href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600&amp;family=Roboto:wght@400&amp;display=swap"
-                media="all" />
-            <style>
-                .css-solid_bg {
-                    background-color: #550000;
-                    -webkit-background-position: top center;
-                    background-position: top center;
-                    background-repeat: no-repeat;
-                    -webkit-background-size: cover;
-                    background-size: cover;
-                    bottom: 0;
-                    left: 0;
-                    position: fixed;
-                    right: 0;
-                    z-index: -1;
-                    top: 56px;
-                    bottom: -120px;
-                }
+<body>
 
-                @media (min-width: 768px) {
-                    .css-solid_bg {
-                        top: 0;
-                    }
-                }
-            </style>
-            <div class="css-solid_bg"></div>
-            <style>
-                .css-mobile_page_layout_container {
-                    position: relative;
-                    display: -webkit-box;
-                    display: -webkit-flex;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-flex-direction: column;
-                    -ms-flex-direction: column;
-                    flex-direction: column;
-                    -webkit-align-items: center;
-                    -webkit-box-align: center;
-                    -ms-flex-align: center;
-                    align-items: center;
-                    pointer-events: auto;
-                }
-            </style>
-            <div class="css-mobile_page_layout_container">
-                <style>
-                    .page_layout {
-                        display: -webkit-box;
-                        display: -webkit-flex;
-                        display: -ms-flexbox;
-                        display: flex;
-                        -webkit-flex-direction: column;
-                        -ms-flex-direction: column;
-                        flex-direction: column;
-                        -webkit-box-flex-wrap: wrap;
-                        -webkit-flex-wrap: wrap;
-                        -ms-flex-wrap: wrap;
-                        flex-wrap: wrap;
-                        -webkit-box-pack: center;
-                        -ms-flex-pack: center;
-                        -webkit-justify-content: center;
-                        justify-content: center;
-                        width: 100%;
-                    }
+    {% include mobile_header.html %}
+    {% include desktop_header.html %}
 
-                    .page_layout.verticalLayout.homePage {
-                        -webkit-flex-direction: row;
-                        -ms-flex-direction: row;
-                        flex-direction: row;
-                    }
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600&amp;family=Roboto:wght@400&amp;display=swap"
+        media="all" />
 
-                    @media (min-width: 768px) {
-                        .page_layout.verticalLayout.homePage {
-                            padding: 0 0;
-                        }
-                    }
-                </style>
-                <div class="{% if page.vertical_layout != false %}verticalLayout {% endif %}homePage page_layout">
-                    {% include header_flowers.html %}
-                    {% include mobile_header.html %}
-                    {% include desktop_header.html %}
-                    {% include desktop_nav.html %}
-                    {% include mobile_nav.html %}
-                    {{ content }}
-                </div>
-            </div>
-            {% include footer.html %}
-        </div>
+    <style>
+        .page_layout {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .page_layout.verticalLayout.homePage {
+            flex-direction: row;
+        }
+
+        @media (min-width: 768px) {
+            .page_layout.verticalLayout.homePage {
+                padding: 0 0;
+            }
+        }
+
+        .css-solid_bg {
+            background-color: #550000;
+            -webkit-background-position: top center;
+            background-position: top center;
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
+            bottom: 0;
+            left: 0;
+            position: fixed;
+            right: 0;
+            z-index: -1;
+            top: 56px;
+            bottom: -120px;
+        }
+
+        @media (min-width: 768px) {
+            .css-solid_bg {
+                top: 0;
+            }
+        }
+    </style>
+
+    <div class="css-solid_bg"></div>
+    <div class="{% if page.vertical_layout != false %}verticalLayout {% endif %}homePage page_layout">
+        {% include header_flowers.html %}
+        {% include desktop_nav.html %}
+        {% include mobile_nav.html %}
+        {{ content }}
     </div>
 
+    {% include footer.html %}
 </body>
 
 </html>
