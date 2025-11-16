@@ -184,7 +184,7 @@ layout: main
                     }
                     .rsvp-button:hover {
                         background-color: #F1E5AC;
-                        color: #eeebdd;
+                        color: #550000;
                         text-decoration: none;
                     }
                 </style>
