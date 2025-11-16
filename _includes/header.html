@@ -1,0 +1,82 @@
+<style>
+    /* Both mobile and desktop */
+    .event-date {
+        line-height: 1;
+        margin: 8px 0;
+        font-family: Roboto;
+        letter-spacing: 2px;
+        color: #F1E5AC;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1.25rem;
+    }
+
+    .couple-names {
+        line-height: 1;
+        font-family: Abhaya Libre;
+        color: #F1E5AC;
+        text-transform: none;
+        font-weight: 600;
+        padding-top: 0;
+    }
+
+    /* Just desktop */
+    @media (min-width: 768px) {
+        .mobile-header {
+            display: none;
+        }
+
+        .couple-names {
+            letter-spacing: 6px;
+            font-size: 60px;
+        }
+
+        .desktop-header {
+        padding: 0 4% 10px 4%;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+        display: none;
+        position: absolute;
+        top: 40%;
+        display: block;
+    }
+    }
+
+    /* Just mobile */
+    @media(max-width: 768px) {
+        .mobile-header {
+            padding: 0 4% 10px 4%;
+            text-align: center;
+            width: 100%;
+            z-index: 1;
+            position: absolute;
+            top: 11%;
+        }
+
+        .desktop-header {
+            display: none;
+        }
+
+        .couple-names {
+            letter-spacing: 3px;
+            font-size: calc(60px * 0.75);
+        }
+    }
+
+    @media (max-width: 640px) {
+        .event-date {
+            font-size: calc(18px * 0.75);
+        }
+    }
+</style>
+<header class="mobile-header">
+    <h1 class="couple-names">Evan &amp; Shuli</h1>
+    <div class="event-date">November 14, 2026</div>
+</header>
+
+<header class="desktop-header" style="margin-top: -3rem">
+    <h1 class="couple-names">Evan &amp; Shuli</h1>
+    <div class="event-date">November 14, 2026</div>
+</header>
