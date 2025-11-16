@@ -128,7 +128,7 @@ layout: main
     }
 </style>
 
-<div class="css-pov3if">
+<div>
     <div>
         <h4 class="section-header">Cafes!</h4>
         <div class="section-item">

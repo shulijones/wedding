@@ -109,11 +109,12 @@
                                     font-size: calc(14px * 0.9);
                                 }
                             }
-                        </style><span class="{% if page.name == 'index.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Home</span>
+                        </style><span
+                            class="{% if page.name == 'index.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Home</span>
                     </a>
                 </li>
-                <li class="desktop-nav-menu-item"><a class="nav-menu-item-link desktop-nav-menu-item-link" rel="nofollow"
-                        href="{{site.menu_pages.schedule}}">
+                <li class="desktop-nav-menu-item"><a class="nav-menu-item-link desktop-nav-menu-item-link"
+                        rel="nofollow" href="{{site.menu_pages.schedule}}">
                         <style>
                             .css-unselected_page {
                                 font-family: Roboto;
@@ -152,14 +153,21 @@
                                 color: #F1E5AC;
                                 border-bottom: 2px solid rgba(243, 221, 98, 0.7);
                             }
-                        </style><span class="{% if page.name == 'schedule.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Schedule</span>
+                        </style><span
+                            class="{% if page.name == 'schedule.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Schedule</span>
                     </a></li>
+                <li class="desktop-nav-menu-item"><a class="nav-menu-item-link desktop-nav-menu-item-link"
+                        rel="nofollow" href="{{site.menu_pages.qna}}"><span
+                            class="{% if page.name == 'q-a.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Q
+                            &amp; A</span></a></li>
+                <li class="desktop-nav-menu-item"><a class="nav-menu-item-link desktop-nav-menu-item-link"
+                        rel="nofollow" href="{{site.menu_pages.travel}}"><span
+                            class="{% if page.name == 'travel.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Travel
+                            &amp; Lodging</span></a></li>
+                <!-- <li class="desktop-nav-menu-item"><a class="nav-menu-item-link desktop-nav-menu-item-link" rel="nofollow"
+                        href="{{site.menu_pages.things_to_do}}"><span class="{% if page.name == 'things_to_do.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Things to Do</span></a></li> -->
                 <li class="desktop-nav-menu-item"><a class="nav-menu-item-link desktop-nav-menu-item-link" rel="nofollow"
-                        href="{{site.menu_pages.qna}}"><span class="{% if page.name == 'q-a.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Q &amp; A</span></a></li>
-                <li class="desktop-nav-menu-item"><a class="nav-menu-item-link desktop-nav-menu-item-link" rel="nofollow"
-                        href="{{site.menu_pages.travel}}"><span class="{% if page.name == 'travel.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Travel &amp; Lodging</span></a></li>
-                <li class="desktop-nav-menu-item"><a class="nav-menu-item-link desktop-nav-menu-item-link" rel="nofollow"
-                        href="{{site.menu_pages.things_to_do}}"><span class="{% if page.name == 'things_to_do.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Things to Do</span></a></li>
+                        href="{{site.menu_pages.photos}}"><span class="{% if page.name == 'photos.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Engagement Photos</span></a></li>
             </ul>
         </div>
     </nav>
