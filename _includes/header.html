@@ -1,5 +1,32 @@
 <style>
     /* Both mobile and desktop */
+    .css-top_spacing_for_menubar {
+        height: 56px;
+        width: 100%;
+    }
+
+    @media (min-width: 768px) {
+        .css-top_spacing_for_menubar {
+            display: none;
+        }
+    }
+
+     .header-img {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: -48px;
+    }
+
     .event-date {
         line-height: 1;
         margin: 8px 0;
@@ -33,15 +60,15 @@
         }
 
         .desktop-header {
-        padding: 0 4% 10px 4%;
-        text-align: center;
-        width: 100%;
-        z-index: 1;
-        display: none;
-        position: absolute;
-        top: 40%;
-        display: block;
-    }
+            padding: 0 4% 10px 4%;
+            text-align: center;
+            width: 100%;
+            z-index: 1;
+            display: none;
+            position: absolute;
+            top: 40%;
+            display: block;
+        }
     }
 
     /* Just mobile */
@@ -71,6 +98,45 @@
         }
     }
 </style>
+<div class="css-top_spacing_for_menubar"></div>
+
+<div class="header-img">
+    <picture id="top-image" style="width: 100%;">
+        <source
+            media="(min-resolution: 192dpi) and (min-width: 1280px),(-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px)"
+            srcset="https://media-api.xogrp.com/images/156038b7-2a86-4b30-af1e-90f6c1e8f9bb~rt_auto-rs_3000.h?ordering=explicit">
+        <source
+            media="(min-resolution: 192dpi) and (min-width: 1024px),(-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px)"
+            srcset="https://media-api.xogrp.com/images/156038b7-2a86-4b30-af1e-90f6c1e8f9bb~rt_auto-rs_2560.h?ordering=explicit">
+        <source
+            media="(min-resolution: 192dpi) and (min-width: 768px),(-webkit-min-device-pixel-ratio: 2) and (min-width: 768px)"
+            srcset="https://media-api.xogrp.com/images/156038b7-2a86-4b30-af1e-90f6c1e8f9bb~rt_auto-rs_2048.h?ordering=explicit">
+        <source media="(min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2)"
+            srcset="https://media-api.xogrp.com/images/156038b7-2a86-4b30-af1e-90f6c1e8f9bb~rt_auto-rs_1536.h?ordering=explicit">
+        <source
+            media="(min-resolution: 144dpi) and (min-width: 1280px),(-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1280px)"
+            srcset="https://media-api.xogrp.com/images/156038b7-2a86-4b30-af1e-90f6c1e8f9bb~rt_auto-rs_2250.h?ordering=explicit">
+        <source
+            media="(min-resolution: 144dpi) and (min-width: 1024px),(-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1024px)"
+            srcset="https://media-api.xogrp.com/images/156038b7-2a86-4b30-af1e-90f6c1e8f9bb~rt_auto-rs_1920.h?ordering=explicit">
+        <source
+            media="(min-resolution: 144dpi) and (min-width: 768px),(-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px)"
+            srcset="https://media-api.xogrp.com/images/156038b7-2a86-4b30-af1e-90f6c1e8f9bb~rt_auto-rs_1536.h?ordering=explicit">
+        <source media="(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5)"
+            srcset="https://media-api.xogrp.com/images/156038b7-2a86-4b30-af1e-90f6c1e8f9bb~rt_auto-rs_1152.h?ordering=explicit">
+        <source media="(min-width: 1280px)"
+            srcset="https://media-api.xogrp.com/images/156038b7-2a86-4b30-af1e-90f6c1e8f9bb~rt_auto-rs_1500.h?ordering=explicit">
+        <source media="(min-width: 1024px)"
+            srcset="https://media-api.xogrp.com/images/156038b7-2a86-4b30-af1e-90f6c1e8f9bb~rt_auto-rs_1280.h?ordering=explicit">
+        <source media="(min-width: 768px)"
+            srcset="https://media-api.xogrp.com/images/156038b7-2a86-4b30-af1e-90f6c1e8f9bb~rt_auto-rs_1024.h?ordering=explicit">
+        <source
+            srcset="https://media-api.xogrp.com/images/156038b7-2a86-4b30-af1e-90f6c1e8f9bb~rt_auto-rs_768.h?ordering=explicit">
+        <img loading="eager" alt="" class="cover-photo-img"
+            src="https://media-api.xogrp.com/images/156038b7-2a86-4b30-af1e-90f6c1e8f9bb~rt_auto-rs_1024.h?ordering=explicit">
+    </picture>
+</div>
+
 <header class="mobile-header">
     <h1 class="couple-names">Evan &amp; Shuli</h1>
     <div class="event-date">November 14, 2026</div>
