@@ -188,12 +188,12 @@ layout: main
                         text-decoration: none;
                     }
                 </style>
-                <a href="TODO" class="rsvp-button">
+                <!-- <a href="TODO" class="rsvp-button">
                     RSVP
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="margin-left: 5px; margin-bottom: -2px; width: 16px; height: 16px;">
                         <path d="M2.01 21L23 12 2.01 3v7l15 2-15 2z"/>
                     </svg>
-                </a>
+                </a> -->
             </div>
         </div>
     </div>
