@@ -1,302 +1,279 @@
 <style>
+    .mobile-nav-icon {
+        display: block;
+        height: 40px;
+        left: 8px;
+        margin: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 4px;
+        width: 40px;
+        z-index: 19;
+    }
+
+    .mobile-nav-open-button {
+        background: none;
+        border: none;
+        font-size: 10px;
+        height: 40px;
+        width: 40px;
+        border-radius: 3px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .mobile-nav-open-button-icon {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+    }
+
+    .mobile-nav-animation-1 {
+        display: block;
+        position: absolute;
+        height: 1.5px;
+        width: 100%;
+        background: #F1E5AC;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.25s ease-in-out;
+        transition: 0.25s ease-in-out;
+        top: 4px;
+    }
+
+    .mobile-nav-animation-2 {
+        display: block;
+        position: absolute;
+        height: 1.5px;
+        width: 100%;
+        background: #F1E5AC;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.25s ease-in-out;
+        transition: 0.25s ease-in-out;
+        top: 12px;
+    }
+
+    .mobile-nav-animation-3 {
+        display: block;
+        position: absolute;
+        height: 1.5px;
+        width: 100%;
+        background: #F1E5AC;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.25s ease-in-out;
+        transition: 0.25s ease-in-out;
+        top: 12px;
+    }
+
+    .mobile-nav-animation-4 {
+        display: block;
+        position: absolute;
+        height: 1.5px;
+        width: 100%;
+        background: #F1E5AC;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.25s ease-in-out;
+        transition: 0.25s ease-in-out;
+        top: 20px;
+    }
+
+    .mobile-nav-open-button-alt-text {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    .mobile-page-title-container {
+        height: 48px;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 18;
+        background-color: rgba(55, 00, 00, 50%);
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+
+    .mobile-page-title {
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        width: 100%;
+        font-family: Abhaya Libre;
+        color: #F1E5AC;
+        font-size: 34px;
+        text-transform: lowercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    .mobile-nav-bar-outer-container {
+        left: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        width: 100%;
+        z-index: 18;
+        background-color: #550000;
+        height: 0;
+    }
+
+    .mobile-nav-bar-inner-container {
+        padding-top: 48px;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .mobile-nav-bar-menu {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .css-unselected_page {
+        font-family: Roboto;
+        letter-spacing: 1px;
+        color: #F1E5AC;
+        font-size: 14px;
+        font-weight: normal;
+        border-bottom: 2px solid transparent;
+        display: block;
+        letter-spacing: 2px;
+        line-height: 1;
+        margin: 0 auto;
+        padding: 8px 8px 6px;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        -webkit-transition: all 0.25s;
+        transition: all 0.25s;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+
+    .mobile-nav-bar-menu-item {
+        text-align: center;
+        width: 100%;
+        padding: 8px;
+    }
+
+    .mobile-nav-bar-menu-item:hover,
+    .mobile-nav-bar-menu-item:focus {
+        background-color: rgba(55, 00, 00, 50%);
+    }
+
     @media (min-width: 768px) {
         .mobile-nav-container {
             display: none;
         }
     }
-</style>
-<div class="mobile-nav-container">
-    <style>
-        .mobile-nav-icon {
-            display: block;
-            height: 40px;
-            left: 8px;
-            margin: 0;
-            overflow: hidden;
-            position: fixed;
-            top: 4px;
-            width: 40px;
-            z-index: 19;
+
+    @media (max-width: 640px) {
+        .mobile-page-title {
+            font-size: calc(34px * 0.75);
         }
-    </style>
+
+        .css-unselected_page {
+            font-size: calc(14px * 0.875);
+        }
+    }
+</style>
+
+<div class="mobile-nav-container">
     <div class="mobile-nav-icon">
-        <style>
-            .mobile-nav-open-button {
-                background: none;
-                border: none;
-                font-size: 10px;
-                height: 40px;
-                width: 40px;
-                border-radius: 3px;
-                display: -webkit-box;
-                display: -webkit-flex;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                -webkit-justify-content: center;
-                justify-content: center;
-                -webkit-align-items: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-            }
-        </style><button data-testid="MobileNav__Button" class="mobile-nav-open-button">
-            <style>
-                .mobile-nav-open-button-icon {
-                    width: 24px;
-                    height: 24px;
-                    position: relative;
-                    -webkit-transform: rotate(0deg);
-                    -moz-transform: rotate(0deg);
-                    -ms-transform: rotate(0deg);
-                    transform: rotate(0deg);
-                    -webkit-transition: 0.5s ease-in-out;
-                    transition: 0.5s ease-in-out;
-                }
-            </style>
+        <button data-testid="MobileNav__Button" class="mobile-nav-open-button">
             <div class="mobile-nav-open-button-icon">
-                <style>
-                    .mobile-nav-animation-1 {
-                        display: block;
-                        position: absolute;
-                        height: 1.5px;
-                        width: 100%;
-                        background: #F1E5AC;
-                        border-radius: 9px;
-                        opacity: 1;
-                        left: 0;
-                        -webkit-transform: rotate(0deg);
-                        -moz-transform: rotate(0deg);
-                        -ms-transform: rotate(0deg);
-                        transform: rotate(0deg);
-                        -webkit-transition: 0.25s ease-in-out;
-                        transition: 0.25s ease-in-out;
-                        top: 4px;
-                    }
-                </style><span class="mobile-nav-animation-1"></span>
-                <style>
-                    .mobile-nav-animation-2 {
-                        display: block;
-                        position: absolute;
-                        height: 1.5px;
-                        width: 100%;
-                        background: #F1E5AC;
-                        border-radius: 9px;
-                        opacity: 1;
-                        left: 0;
-                        -webkit-transform: rotate(0deg);
-                        -moz-transform: rotate(0deg);
-                        -ms-transform: rotate(0deg);
-                        transform: rotate(0deg);
-                        -webkit-transition: 0.25s ease-in-out;
-                        transition: 0.25s ease-in-out;
-                        top: 12px;
-                    }
-                </style><span class="mobile-nav-animation-2"></span>
-                <style>
-                    .mobile-nav-animation-3 {
-                        display: block;
-                        position: absolute;
-                        height: 1.5px;
-                        width: 100%;
-                        background: #F1E5AC;
-                        border-radius: 9px;
-                        opacity: 1;
-                        left: 0;
-                        -webkit-transform: rotate(0deg);
-                        -moz-transform: rotate(0deg);
-                        -ms-transform: rotate(0deg);
-                        transform: rotate(0deg);
-                        -webkit-transition: 0.25s ease-in-out;
-                        transition: 0.25s ease-in-out;
-                        top: 12px;
-                    }
-                </style><span class="mobile-nav-animation-3"></span>
-                <style>
-                    .mobile-nav-animation-4 {
-                        display: block;
-                        position: absolute;
-                        height: 1.5px;
-                        width: 100%;
-                        background: #F1E5AC;
-                        border-radius: 9px;
-                        opacity: 1;
-                        left: 0;
-                        -webkit-transform: rotate(0deg);
-                        -moz-transform: rotate(0deg);
-                        -ms-transform: rotate(0deg);
-                        transform: rotate(0deg);
-                        -webkit-transition: 0.25s ease-in-out;
-                        transition: 0.25s ease-in-out;
-                        top: 20px;
-                    }
-                </style><span class="mobile-nav-animation-4"></span>
+                <span class="mobile-nav-animation-1"></span>
+                <span class="mobile-nav-animation-2"></span>
+                <span class="mobile-nav-animation-3"></span>
+                <span class="mobile-nav-animation-4"></span>
             </div>
-            <style>
-                .mobile-nav-open-button-alt-text {
-                    border: 0;
-                    clip: rect(0 0 0 0);
-                    height: 1px;
-                    margin: -1px;
-                    overflow: hidden;
-                    padding: 0;
-                    position: absolute;
-                    width: 1px;
-                }
-            </style><span class="mobile-nav-open-button-alt-text">Menu Button</span>
+            <span class="mobile-nav-open-button-alt-text">Menu Button</span>
         </button>
     </div>
-    <style>
-        .mobile-page-title-container {
-            height: 48px;
-            left: 0;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 18;
-            background-color: rgba(55, 00, 00, 50%);
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-align-items: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-        }
-    </style>
     <div class="mobile-page-title-container">
-        <style>
-            .mobile-page-title {
-                -webkit-align-items: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                display: -webkit-box;
-                display: -webkit-flex;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                -webkit-justify-content: center;
-                justify-content: center;
-                width: 100%;
-                font-family: Abhaya Libre;
-                color: #F1E5AC;
-                font-size: 34px;
-                text-transform: lowercase;
-                font-weight: 600;
-                letter-spacing: 2px;
-            }
-
-            @media (max-width: 640px) {
-                .mobile-page-title {
-                    font-size: calc(34px * 0.75);
-                }
-            }
-
-            @media(max-width: 640px) {
-                .mobile-page-title {
-                    font-size: calc(34px * 0.85);
-                }
-            }
-        </style>
         <h2 class="mobile-page-title">E&amp;S</h2>
     </div>
-    <style>
-        .mobile-nav-bar-outer-container {
-            left: 0;
-            overflow: hidden;
-            position: fixed;
-            top: 0;
-            -webkit-transition: all 0.5s;
-            transition: all 0.5s;
-            width: 100%;
-            z-index: 18;
-            background-color: #550000;
-            height: 0;
-        }
-    </style>
     <nav role="navigation" class="mobile-nav-bar-outer-container">
-        <style>
-            .mobile-nav-bar-inner-container {
-                padding-top: 48px;
-                height: 100vh;
-                overflow-y: auto;
-            }
-        </style>
         <div class="mobile-nav-bar-inner-container">
-            <style>
-                .mobile-nav-bar-menu {
-                    display: -webkit-box;
-                    display: -webkit-flex;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-flex-direction: column;
-                    -ms-flex-direction: column;
-                    flex-direction: column;
-                    -webkit-align-items: center;
-                    -webkit-box-align: center;
-                    -ms-flex-align: center;
-                    align-items: center;
-                    list-style: none;
-                    margin: 0;
-                    padding: 0;
-                }
-            </style>
-
-            <style>
-                .css-unselected_page {
-                    font-family: Roboto;
-                    letter-spacing: 1px;
-                    color: #F1E5AC;
-                    font-size: 14px;
-                    font-weight: normal;
-                    border-bottom: 2px solid transparent;
-                    display: block;
-                    letter-spacing: 2px;
-                    line-height: 1;
-                    margin: 0 auto;
-                    padding: 8px 8px 6px;
-                    -webkit-text-decoration: none;
-                    text-decoration: none;
-                    -webkit-transition: all 0.25s;
-                    transition: all 0.25s;
-                    width: -webkit-fit-content;
-                    width: -moz-fit-content;
-                    width: fit-content;
-                }
-
-                @media (max-width: 640px) {
-                    .css-unselected_page {
-                        font-size: calc(14px * 0.875);
-                    }
-                }
-
-                @media(max-width: 640px) {
-                    .css-unselected_page {
-                        font-size: calc(14px * 0.9);
-                    }
-                }
-            </style>
             <ul class="mobile-nav-bar-menu">
-                <style>
-                    .mobile-nav-bar-menu-item {
-                        text-align: center;
-                        width: 100%;
-                        padding: 8px;
-                    }
-
-                    .mobile-nav-bar-menu-item:hover,
-                    .mobile-nav-bar-menu-item:focus {
-                        background-color: rgba(55, 00, 00, 50%);
-                    }
-                </style>
                 <li class="mobile-nav-bar-menu-item"><a class="nav-menu-item-link" href="{{site.menu_pages.home}}"><span
                             class="{% if page.name == 'index.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Home</span></a>
                 </li>
@@ -318,11 +295,13 @@
                             to Do</span></a></li> -->
                 <li class="mobile-nav-bar-menu-item"><a class="nav-menu-item-link" rel="nofollow"
                         href="{{site.menu_pages.photos}}"><span
-                            class="{% if page.name == 'photos.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Engagement Photos</span></a></li>
+                            class="{% if page.name == 'photos.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Engagement
+                            Photos</span></a></li>
             </ul>
         </div>
     </nav>
 </div>
+
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const button = document.querySelector('[data-testid="MobileNav__Button"]');

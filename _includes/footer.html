@@ -19,106 +19,92 @@
         position: relative;
         width: 100%;
     }
-</style>
-<footer class="footer">
-    <style>
-        .footer-outer-container {
-            padding-top: 50px;
+
+    .footer-outer-container {
+        padding-top: 50px;
+    }
+
+    .footer-inner-container {
+        letter-spacing: 3.4px;
+        line-height: 1;
+        margin: 52px auto;
+        text-align: center;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+
+    .footer-couple-monogram {
+        padding: 0 18px 16px;
+        font-family: Abhaya Libre;
+        color: #F1E5AC;
+        font-size: 60px;
+        text-transform: none;
+        letter-spacing: 6px;
+        font-weight: 600;
+    }
+
+    .footer-event-date {
+        padding: 20px 18px 0;
+        font-family: Roboto;
+        letter-spacing: 2px;
+        color: #F1E5AC;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1.25rem;
+        border-top: 1px solid #F1E5AC;
+    }
+
+    .footer-underline {
+        line-height: 1.75;
+        font-family: Roboto;
+        letter-spacing: 0px;
+        color: #F1E5AC;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 12px 0;
+        text-align: center;
+    }
+
+    .footer-underline a {
+        -webkit-text-decoration: underline;
+        text-decoration: underline;
+    }
+
+    a:hover,
+    .desktop-nav-menu-item a:hover {
+        color: #F1E5AC;
+        border-bottom: 2px solid rgba(119, 107, 39, 0.7);
+        text-decoration: none;
+    }
+
+    @media (max-width: 640px) {
+        .footer-event-date {
+            font-size: calc(18px * 0.75);
         }
-    </style>
+
+        .footer-couple-monogram {
+            font-size: calc(60px * 0.75);
+        }
+
+        .footer-underline {
+            font-size: calc(13px * 0.8333);
+        }
+    }
+
+    @media(max-width: 768px) {
+        .footer-couple-monogram {
+            letter-spacing: 3px;
+        }
+    }
+</style>
+
+<footer class="footer">
     <div class="footer-outer-container">
-        <style>
-            .footer-inner-container {
-                letter-spacing: 3.4px;
-                line-height: 1;
-                margin: 52px auto;
-                text-align: center;
-                width: -webkit-fit-content;
-                width: -moz-fit-content;
-                width: fit-content;
-            }
-        </style>
         <div class="footer-inner-container">
-            <style>
-                .footer-couple-monogram {
-                    padding: 0 18px 16px;
-                    font-family: Abhaya Libre;
-                    color: #F1E5AC;
-                    font-size: 60px;
-                    text-transform: none;
-                    letter-spacing: 6px;
-                    font-weight: 600;
-                }
-
-                @media (max-width: 640px) {
-                    .footer-couple-monogram {
-                        font-size: calc(60px * 0.75);
-                    }
-                }
-
-                @media(max-width: 768px) {
-                    .footer-couple-monogram {
-                        letter-spacing: 3px;
-                    }
-                }
-            </style>
             <div class="footer-couple-monogram">E&amp;S</div>
-            <style>
-                .footer-event-date {
-                    padding: 20px 18px 0;
-                    font-family: Roboto;
-                    letter-spacing: 2px;
-                    color: #F1E5AC;
-                    font-size: 18px;
-                    font-weight: 400;
-                    text-transform: uppercase;
-                    line-height: 1.25rem;
-                    border-top: 1px solid #F1E5AC;
-                }
-
-                @media (max-width: 640px) {
-                    .footer-event-date {
-                        font-size: calc(18px * 0.75);
-                    }
-                }
-
-                @media(max-width: 640px) {
-                    .footer-event-date {
-                        font-size: calc(18px * 0.85);
-                    }
-                }
-            </style>
             <div class="footer-event-date">11.14.2026</div>
         </div>
-        <style>
-            .footer-underline {
-                line-height: 1.75;
-                font-family: Roboto;
-                letter-spacing: 0px;
-                color: #F1E5AC;
-                font-size: 13px;
-                font-weight: normal;
-                margin: 12px 0;
-                text-align: center;
-            }
-
-            @media (max-width: 640px) {
-                .footer-underline {
-                    font-size: calc(13px * 0.8333);
-                }
-            }
-
-            .footer-underline a {
-                -webkit-text-decoration: underline;
-                text-decoration: underline;
-            }
-
-
-            a:hover, .desktop-nav-menu-item a:hover {
-                color: #F1E5AC;
-                border-bottom: 2px solid rgba(119, 107, 39, 0.7);
-                text-decoration: none;
-            }
-        </style>
     </div>
 </footer>
