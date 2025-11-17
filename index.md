@@ -95,7 +95,7 @@ layout: main
     
     @media (min-width: 768px) {
         .photo-container {
-            width: 50%;
+            width: 60%;
             max-width: 720px;
             padding-left: 2rem;
         }
