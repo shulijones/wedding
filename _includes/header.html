@@ -100,6 +100,131 @@
     }
 
     /* Desktop nav - mobile nav is separate in mobile_nav.html*/
+    .desktop-nav-container {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: none;
+        width: 100%;
+    }
+
+    .desktop-nav-menu-container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0px 16px 8px;
+    }
+
+    .desktop-nav-menu {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+
+    .desktop-nav-menu-item {
+        display: inline-block;
+        list-style: none;
+        padding: 0 8px;
+    }
+
+    .desktop-nav-menu-item-link {
+        margin: 0;
+        padding: 8px 0;
+    }
+
+    .css-selected_page {
+        font-family: Roboto;
+        letter-spacing: 1px;
+        color: #F1E5AC;
+        font-size: 14px;
+        font-weight: normal;
+        border-bottom: 2px solid transparent;
+        display: block;
+        letter-spacing: 2px;
+        line-height: 1;
+        margin: 0 auto;
+        padding: 8px 8px 6px;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        -webkit-transition: all 0.25s;
+        transition: all 0.25s;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        border-bottom: 2px solid #F1E5AC;
+    }
+
+    @media (min-width: 768px) {
+        .desktop-nav-container {
+            display: inherit;
+            width: 100%;
+            position: absolute;
+            bottom: 25px;
+        }
+
+        .desktop-nav {
+            display: block;
+            z-index: 1;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .css-selected_page {
+            font-size: calc(14px * 0.875);
+        }
+    }
+
+    .css-unselected_page {
+        font-family: Roboto;
+        letter-spacing: 1px;
+        color: #F1E5AC;
+        font-size: 14px;
+        font-weight: normal;
+        border-bottom: 2px solid transparent;
+        display: block;
+        letter-spacing: 2px;
+        line-height: 1;
+        margin: 0 auto;
+        padding: 8px 8px 6px;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        -webkit-transition: all 0.25s;
+        transition: all 0.25s;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+
+    @media (max-width: 640px) {
+        .css-unselected_page {
+            font-size: calc(14px * 0.875);
+        }
+    }
+
+    .css-unselected_page:hover {
+        color: #F1E5AC;
+        border-bottom: 2px solid rgba(243, 221, 98, 0.7);
+    }
 </style>
 <div class="css-top_spacing_for_menubar"></div>
 
@@ -149,165 +274,19 @@
         <div class="event-date">November 14, 2026</div>
     </header>
 
-    <style>
-        .desktop-nav-container {
-            display: none;
-        }
-
-        @media (min-width: 768px) {
-            .desktop-nav-container {
-                display: inherit;
-                width: 100%;
-                position: absolute;
-                bottom: 25px;
-            }
-        }
-    </style>
     <div class="desktop-nav-container">
-        <style>
-            .desktop-nav {
-                display: none;
-                width: 100%;
-            }
-
-            @media (min-width: 768px) {
-                .desktop-nav {
-                    display: block;
-                    z-index: 1;
-                }
-            }
-        </style>
         <nav class="desktop-nav">
-            <style>
-                .desktop-nav-menu-container {
-                    display: -webkit-box;
-                    display: -webkit-flex;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-box-flex-wrap: wrap;
-                    -webkit-flex-wrap: wrap;
-                    -ms-flex-wrap: wrap;
-                    flex-wrap: wrap;
-                    -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                    -webkit-justify-content: center;
-                    justify-content: center;
-                    margin: 0;
-                    padding: 0px 16px 8px;
-                }
-            </style>
             <div class="desktop-nav-menu-container">
-                <style>
-                    .desktop-nav-menu {
-                        display: -webkit-box;
-                        display: -webkit-flex;
-                        display: -ms-flexbox;
-                        display: flex;
-                        -webkit-box-flex-wrap: wrap;
-                        -webkit-flex-wrap: wrap;
-                        -ms-flex-wrap: wrap;
-                        flex-wrap: wrap;
-                        -webkit-box-pack: center;
-                        -ms-flex-pack: center;
-                        -webkit-justify-content: center;
-                        justify-content: center;
-                    }
-                </style>
                 <ul class="desktop-nav-menu">
-                    <style>
-                        .desktop-nav-menu-item {
-                            display: inline-block;
-                            list-style: none;
-                            padding: 0 8px;
-                        }
-                    </style>
                     <li class="desktop-nav-menu-item">
-                        <style>
-                            .desktop-nav-menu-item-link {
-                                margin: 0;
-                                padding: 8px 0;
-                            }
-                        </style><a class="nav-menu-item-link desktop-nav-menu-item-link"
-                            href="{{site.menu_pages.home}}">
-                            <style>
-                                .css-selected_page {
-                                    font-family: Roboto;
-                                    letter-spacing: 1px;
-                                    color: #F1E5AC;
-                                    font-size: 14px;
-                                    font-weight: normal;
-                                    border-bottom: 2px solid transparent;
-                                    display: block;
-                                    letter-spacing: 2px;
-                                    line-height: 1;
-                                    margin: 0 auto;
-                                    padding: 8px 8px 6px;
-                                    -webkit-text-decoration: none;
-                                    text-decoration: none;
-                                    -webkit-transition: all 0.25s;
-                                    transition: all 0.25s;
-                                    width: -webkit-fit-content;
-                                    width: -moz-fit-content;
-                                    width: fit-content;
-                                    border-bottom: 2px solid #F1E5AC;
-                                }
-
-                                @media (max-width: 640px) {
-                                    .css-selected_page {
-                                        font-size: calc(14px * 0.875);
-                                    }
-                                }
-
-                                @media(max-width: 640px) {
-                                    .css-selected_page {
-                                        font-size: calc(14px * 0.9);
-                                    }
-                                }
-                            </style><span
+                        <a class="nav-menu-item-link desktop-nav-menu-item-link" href="{{site.menu_pages.home}}">
+                            <span
                                 class="{% if page.name == 'index.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Home</span>
                         </a>
                     </li>
                     <li class="desktop-nav-menu-item"><a class="nav-menu-item-link desktop-nav-menu-item-link"
                             rel="nofollow" href="{{site.menu_pages.schedule}}">
-                            <style>
-                                .css-unselected_page {
-                                    font-family: Roboto;
-                                    letter-spacing: 1px;
-                                    color: #F1E5AC;
-                                    font-size: 14px;
-                                    font-weight: normal;
-                                    border-bottom: 2px solid transparent;
-                                    display: block;
-                                    letter-spacing: 2px;
-                                    line-height: 1;
-                                    margin: 0 auto;
-                                    padding: 8px 8px 6px;
-                                    -webkit-text-decoration: none;
-                                    text-decoration: none;
-                                    -webkit-transition: all 0.25s;
-                                    transition: all 0.25s;
-                                    width: -webkit-fit-content;
-                                    width: -moz-fit-content;
-                                    width: fit-content;
-                                }
-
-                                @media (max-width: 640px) {
-                                    .css-unselected_page {
-                                        font-size: calc(14px * 0.875);
-                                    }
-                                }
-
-                                @media(max-width: 640px) {
-                                    .css-unselected_page {
-                                        font-size: calc(14px * 0.9);
-                                    }
-                                }
-
-                                .css-unselected_page:hover {
-                                    color: #F1E5AC;
-                                    border-bottom: 2px solid rgba(243, 221, 98, 0.7);
-                                }
-                            </style><span
+                            <span
                                 class="{% if page.name == 'schedule.md' %}css-selected_page{% else %}css-unselected_page{% endif %}">Schedule</span>
                         </a></li>
                     <li class="desktop-nav-menu-item"><a class="nav-menu-item-link desktop-nav-menu-item-link"
