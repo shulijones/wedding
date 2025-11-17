@@ -5,7 +5,7 @@ layout: main
 <style>
     .main-container {
         width: 100%;
-        margin-top: 50px;
+        padding-top: 40px;
         display: flex;
         flex-direction: column;
     }

@@ -42,7 +42,7 @@
             position: fixed;
             right: 0;
             z-index: -1;
-            top: 56px;
+            top: 48px;
             bottom: -120px;
         }
 
@@ -55,7 +55,6 @@
 
     <div class="css-solid_bg"></div>
     <div class="{% if page.vertical_layout != false %}verticalLayout {% endif %}homePage page_layout">
-        {% include desktop_nav.html %}
         {% include mobile_nav.html %}
         {{ content }}
     </div>
