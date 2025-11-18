@@ -90,7 +90,7 @@ layout: main
         margin: 8px 0;
         font-family: Roboto;
         letter-spacing: 2px;
-        color: #F1E5AC;
+        color: #DBC453;
         font-size: 19px;
         font-weight: normal;
         text-transform: uppercase;
@@ -100,7 +100,7 @@ layout: main
         margin: 4px 0;
         font-family: Roboto;
         letter-spacing: 1px;
-        color: #F1E5AC;
+        color: #DBC453;
         font-size: 15px;
         font-weight: normal;
     }
