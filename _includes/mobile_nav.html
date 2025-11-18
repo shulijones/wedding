@@ -2,7 +2,7 @@
     .mobile-nav-icon {
         display: block;
         height: 40px;
-        left: 8px;
+        left: 4px;
         margin: 0;
         overflow: hidden;
         position: fixed;
@@ -132,7 +132,7 @@
         left: 0;
         position: fixed;
         top: 0;
-        width: 100%;
+        width: 48px;
         z-index: 18;
         background-color: rgba(55, 00, 00, 50%);
         display: -webkit-box;
@@ -147,6 +147,7 @@
         -ms-flex-pack: center;
         -webkit-justify-content: center;
         justify-content: center;
+        border: 1px solid #F1E5AC;
     }
 
     .mobile-page-title {
@@ -258,7 +259,7 @@
 
 <div class="mobile-nav-container">
     <div class="mobile-nav-icon">
-        <button data-testid="MobileNav__Button" class="mobile-nav-open-button">
+        <button data-testid="MobileNav__Button__donotremove" class="mobile-nav-open-button">
             <div class="mobile-nav-open-button-icon">
                 <span class="mobile-nav-animation-1"></span>
                 <span class="mobile-nav-animation-2"></span>
@@ -269,7 +270,6 @@
         </button>
     </div>
     <div class="mobile-page-title-container">
-        <h2 class="mobile-page-title">E&amp;S</h2>
     </div>
     <nav role="navigation" class="mobile-nav-bar-outer-container">
         <div class="mobile-nav-bar-inner-container">
@@ -304,7 +304,7 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const button = document.querySelector('[data-testid="MobileNav__Button"]');
+        const button = document.querySelector('[data-testid="MobileNav__Button__donotremove"]');
         const nav = document.querySelector('.mobile-nav-bar-outer-container');
 
         button.addEventListener('click', function () {
