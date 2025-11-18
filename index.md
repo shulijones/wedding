@@ -59,7 +59,7 @@ layout: main
         margin: 32px 0 8px 0;
         font-family: Abhaya Libre;
         color: #F1E5AC;
-        font-size: 34px;
+        font-size: 44px;
         text-transform: lowercase;
         font-weight: 600;
         letter-spacing: 2px;
@@ -84,7 +84,7 @@ layout: main
         font-family: Roboto;
         letter-spacing: 1px;
         color: #F1E5AC;
-        font-size: 14px;
+        font-size: 15px;
         font-weight: normal;
     }
 
@@ -121,7 +121,11 @@ layout: main
         <div class="css-wedding_data_info">
             <div class="main-text-block">
                 <h4 class="main-text-block-title">Wedding Day</h4>
-                <div class="main-text-block-datetime">November 14, 2026</div>
+                <div class="main-text-block-datetime">
+                    <span>November 14, 2026</span>
+                    <br>
+                    <span>3:45 pm</span>
+                </div>
             </div>
             <div class="main-text-block">
                 <div class="main-text-block-location">Piedmont Community Hall</div>
