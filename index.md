@@ -10,15 +10,6 @@ layout: main
         flex-direction: column;
     }
 
-    @media (min-width: 768px) {
-        .main-container {
-            width: auto;
-            flex-direction: row; 
-            align-items: center;
-            margin: 0;
-        }
-    }
-
     .text-container {
         display: flex;
         flex-direction: column;
@@ -27,27 +18,53 @@ layout: main
         width: 100%; 
     }
 
-    
+    .css-wedding_data_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 40px;
+        text-align: center;
+    }
+
+    .photo-container {
+        width: 100%; 
+    }
+
+    .us-photo {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
     @media (min-width: 768px) {
+        .main-container {
+            width: 90%;
+            max-width: 1200px;
+            flex-direction: row; 
+            align-items: center;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
         .text-container {
             width: auto;
             max-width: 720px;
             padding: 16px 0;
         }
-    }
+    
+        .photo-container {
+            flex-basis: 55%;
+            flex-shrink: 1;
+            flex-grow: 0;
+            max-width: 720px;
+        }
 
-    .css-wedding_data_info {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: 48px 0 24px;
-        align-items: center;
-    }
-
-    .verticalLayout.homePage .css-wedding_data_info {
-        align-items: flex-start;
-        margin: 10px 40px;
-        text-align: left;
+        .css-wedding_data_info {
+            text-align: left;
+            margin-left: 48px;
+            margin-right: 0;
+            align-items: flex-start;
+        }
     }
 
     .main-text-block {
@@ -65,7 +82,7 @@ layout: main
         letter-spacing: 2px;
     }
 
-    .verticalLayout.homePage .main-text-block-title {
+    .main-text-block-title {
         margin: 0 0 8px 0;
     }
 
@@ -86,25 +103,6 @@ layout: main
         color: #F1E5AC;
         font-size: 15px;
         font-weight: normal;
-    }
-
-    .photo-container {
-        width: 100%; 
-    }
-
-    
-    @media (min-width: 768px) {
-        .photo-container {
-            width: 60%;
-            max-width: 720px;
-            padding-left: 2rem;
-        }
-    }
-
-    .us-photo {
-        width: 100%;
-        height: auto;
-        display: block;
     }
 </style>
 
