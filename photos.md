@@ -50,7 +50,9 @@ layout: main
 <div class="container">
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css"/>
         <h4 class="section-header">Engagement Photos</h4>
-        <div class="section-item">Here are a few of our favorites! If you want to see more, you can check out these Google Photos albums of <a class="nicelink" href="https://photos.app.goo.gl/WW959pQ6ps6yJZ3JA">Evan's proposal to Shuli</a> and <a class="nicelink" href="https://photos.app.goo.gl/Lt5xrNrTXC8ksV8h9">Shuli's proposal to Evan</a>.</div>
+        <div class="section-item">Here are a few of our favorites! If you want to see more, you can check out these Google Photos albums of <a class="nicelink" target="_blank"
+ href="https://photos.app.goo.gl/WW959pQ6ps6yJZ3JA">Evan's proposal to Shuli</a> and <a target="_blank"
+class="nicelink" href="https://photos.app.goo.gl/Lt5xrNrTXC8ksV8h9">Shuli's proposal to Evan</a>.</div>
         <div class="photo-container"> 
             <picture>
                 <img src="./photo/Engagement-34.jpg" class="us-photo"/>
