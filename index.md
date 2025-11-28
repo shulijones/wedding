@@ -110,9 +110,9 @@ layout: main
 <div class="main-container">
     <div class="photo-container"> 
         <picture>
-            <source srcSet="us.jpg" />
+            <source srcSet="./photo/us.jpg" />
             <img loading="eager" alt="Evan &amp; Shuli Home Page Banner" width="762"
-                height="953" src="us.jpg" class="us-photo"/>
+                height="953" src="./photo/us.jpg" class="us-photo"/>
         </picture>
     </div>
     <div class="text-container">
