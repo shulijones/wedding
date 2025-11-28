@@ -56,7 +56,7 @@ layout: main
                 <img src="./photo/Engagement-34.jpg" class="us-photo"/>
             </picture>
             <picture>
-                <img src="photo/IMG_4807.jpg" class="us-photo"/>
+                <img src="photo/IMG_4807.JPG" class="us-photo"/>
             </picture>
             <picture class="vertical">
                 <img src="photo/Engagement-47.jpg" class="us-photo"/>
@@ -77,22 +77,22 @@ layout: main
                 <img src="photo/Engagement-97.jpg" class="us-photo"/>
             </picture>
             <picture>
-                <img src="photo/IMG_4728.jpg" class="us-photo"/>
+                <img src="photo/IMG_4728.JPG" class="us-photo"/>
             </picture>
             <picture>
-                <img src="photo/IMG_4737.jpg" class="us-photo"/>
+                <img src="photo/IMG_4737.JPG" class="us-photo"/>
             </picture>
             <picture>
-                <img src="photo/IMG_4772.jpg" class="us-photo"/>
+                <img src="photo/IMG_4772.JPG" class="us-photo"/>
             </picture>
             <picture class="vertical">
-                <img src="photo/IMG_4797.jpg" class="us-photo"/>
+                <img src="photo/IMG_4797.JPG" class="us-photo"/>
             </picture>
             <picture>
-                <img src="photo/IMG_4799.jpg" class="us-photo"/>
+                <img src="photo/IMG_4799.JPG" class="us-photo"/>
             </picture>
             <picture class="vertical">
-                <img src="photo/IMG_4784.jpg" class="us-photo"/>
+                <img src="photo/IMG_4784.JPG" class="us-photo"/>
             </picture>
             <picture>
                 <img src="photo/Engagement-81.jpg" class="us-photo"/>
