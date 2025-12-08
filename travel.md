@@ -5,6 +5,10 @@ layout: main
 <div>
 <link rel="stylesheet" type="text/css" href="./assets/css/main.css"/>
     <div>
+        <h4 class="section-header">How to get here</h4>
+        <div class="section-item">
+        If you're traveling, we'd recommend flying into either San Francisco International Airport (SFO) or Oakland Airport (OAK). Both are reasonably convenient to the wedding venue location of Piedmont and to the city of San Francisco where we live. You can book a rental car if you'd like, but it's not necessary - both airports are connected to the BART subway system and the area has plenty of public transportation (plus, parking can often be tricky in the city).
+        </div>
         <h4 class="section-header">Where to stay</h4>
         <div class="section-item">
         <p>We live in the southeast part of San Francisco's Mission District (24th & Bryant). The wedding itself will be in Piedmont, across the Bay to the east of SF. Other wedding events will likely be sprinkled throughout SF.</p>
