@@ -82,6 +82,12 @@ layout: main
         letter-spacing: 2px;
     }
 
+    .extra-info {
+        color: #F1E5AC;
+        text-transform: lowercase;
+        font-style: italic;
+    }
+
     .main-text-block-title {
         margin: 0 0 8px 0;
     }
@@ -122,7 +128,9 @@ layout: main
                 <div class="main-text-block-datetime">
                     <span>November 14, 2026</span>
                     <br>
-                    <span>3:45 pm</span>
+                    <span>~3:45 pm</span>
+                    <br><br>
+                    <span class="extra-info">invites to follow</span>
                 </div>
             </div>
             <div class="main-text-block">
