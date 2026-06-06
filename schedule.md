@@ -12,12 +12,6 @@ layout: main
         padding-left: 15px;
         margin-top: 5px;
     }
-    .nicelink {
-        color:  #1760c6ff;
-    }
-    .nicelink:visited {
-        color: #a916a9ff
-    }
 </style>
 <div>
 <link rel="stylesheet" type="text/css" href="./assets/css/main.css"/>

@@ -19,13 +19,21 @@ ul {
   padding: 0;
 }
 
-/* Don't underline navbar links by default */
+/* Link styling */
 a {
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+.nicelink {
+    color: 	#1760c6ff;
+}
+
+.nicelink:visited {
+    color: #a916a9ff
 }
 
 /* Makes the front page photo go to the left of the text instead of above it */
