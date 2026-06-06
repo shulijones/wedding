@@ -127,10 +127,12 @@ layout: main
                 <h4 class="main-text-block-title">Wedding Day</h4>
                 <div class="main-text-block-datetime">
                     <span>November 14, 2026</span>
-                    <br>
-                    <span>~3:45 pm</span>
                     <br><br>
-                    <span class="extra-info">invites to follow</span>
+                    <span>Doors open &mdash; 3:15 pm</span>
+                    <br>
+                    <span>Ceremony begins &mdash; 3:45 pm</span>
+                    <br><br>
+                    <span class="extra-info">TODO RSVP</span>
                 </div>
             </div>
             <div class="main-text-block">
