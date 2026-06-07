@@ -1,8 +1,14 @@
 ---
 layout: main
 ---
+<style>
+  #entireForm {
+    font-family: Roboto;
+    color: #F1E5AC;
+  }
+</style>
 <div>
-<link rel="stylesheet" type="text/css" href="./assets/css/main.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="./assets/css/main.css"/> -->
 <div id="entireForm">
             <form id="form">
                 <label>Look up your invitation:</label>

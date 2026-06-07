@@ -4,7 +4,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
   var fname = this.elements.fname.value;
   var lname = this.elements.lname.value;
   var url = 'https://script.google.com/macros/s/AKfycbzLNuguRzjJq0dX43242RObKG0NkvRuGpe7XIVmMGTZboFY1WwBobd69TFHW1thGoc9/exec?fname=' + fname + '&lname=' + lname;
-  console.log(url)
+  
   fetch(url,
     {
       redirect: "follow",
@@ -35,6 +35,14 @@ document.getElementById('form').addEventListener('submit', function (event) {
     });
 });
 
+function getEventRsvpButtons(name) {
+  return `<div>
+  I'll be there! <input type="radio" name="${name}" id="yes-${name}" /><br>
+  Not sure yet <input type="radio" name="${name}" id="maybe-${name}" /><br>
+  Can't make it <input type="radio" name="${name}" id="no-${name}" /><br>
+  </div>`
+}
+
 function create_rsvpPage1(idAndNames) {
   const data = [];
   const inputArray = idAndNames.split(',');
@@ -55,10 +63,13 @@ function create_rsvpPage1(idAndNames) {
   // Write HTML and checkboxes for each person
   document.getElementById('entireForm').innerHTML = `
       <div>
-      We found your RSVP!<br/><br/>
       ${data.map(
-    person => `${person.name}: <input type="checkbox" id="${person.id}" /> Attending?<br/><br/>`
+    person => `${person.name}: Attending? <input type="checkbox" id="rsvp-${person.id}" /><br/>Any dietary restrictions? <input type="text" id="diet-${person.id}" /><br/><br/>`
   ).join('')}
+      We know you might not be sure yet, but we'd love a general sense of if you'll be able to make it to the events we're planning. (See the Schedule for more details.)<br>
+      Thursday night Exploratorium: ${getEventRsvpButtons("explor")}<br>
+      Friday afternoon brewery: ${getEventRsvpButtons("brewery")}<br>
+      Sunday morning brunch at our house: ${getEventRsvpButtons("brunch")}<br>
       <button id="submit">Submit</button>
       <div id="form-output"></div>
       </div>
@@ -66,12 +77,20 @@ function create_rsvpPage1(idAndNames) {
 
   // Submit button code
   document.getElementById('submit').addEventListener('click', () => {
-    // write each person's attending value to "data"
     data.forEach(person => {
-      person.attending = document.getElementById(person.id).checked ? 1 : 0;
+      person.attending = document.getElementById(`rsvp-${person.id}`).checked ? 1 : 0;
+      person.diet = document.getElementById(`diet-${person.id}`).value;
     });
-
-    submitForm(data);
+    eventData = [];
+    for (event of ["explor", "brewery", "brunch"]) {
+      eventData.push({
+        attending: document.querySelector(`input[name="${event}"]:checked`).id.split('-')[0]
+      })
+    }
+    var response = {};
+    response.data = data;
+    response.eventData = eventData;
+    submitForm(response);
 
     // Disable the submit button so people can't click on it multiple times
     document.getElementById('submit').disabled = true;
