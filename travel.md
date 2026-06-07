@@ -24,13 +24,13 @@ layout: main
             <ul style="padding-left:35px">
                 <li>The Laundromat (Bagels) &mdash; no sandwiches, just bagels, but boy are they good!</li>
                 <li>Arsicault (Pastries) &mdash; The best morning bun and chocolate croissant in the city, if you ask us.</li>
-                <li>Arizmendi (Bakery) &mdash; Their sourdough bread is Shuli's very favorite. Their pizza is also excellent, although they only offer one variety per day.</li>
+                <li>Arizmendi (Bakery) &mdash; Their sourdough bread is Shuli's very favorite. Their pizza is also excellent - they offer a single, often weird, always delicious flavor every day.</li>
                 <li>Heroic Italian (Sandwiches) &mdash; An unassuming spot hidden inside a wine bar has the best sandwiches we've found in the city (particularly if you're looking for vegetarian options).</li>
                 <li>Burma Love (Dinner) &mdash; Neither of us had ever tried Burmese food before moving to SF, and we both fell in love with Burma Love. Probably our favorite dinner spot in the city. You might be eating some similar food at our wedding reception ;) </li>
                 <li>Lers Ros (Dinner) &mdash; We both love Thai food, but it's just not what SF does best. After trying a lot of places that didn't quite do it for us, Lers Ros has become our go-to.</li>
             </ul>  
         <br>
-        Parks & museums: 
+        Activities & Parks:
             <ul style="padding-left:35px">
                 <li>Mission Cliffs &mdash; The rock climbing gym in our neighborhood where we've spent countless hours.</li>
                 <li>Precita Park &mdash; This park is small but mighty (and very close to our house). Go at the right time and you might see some live music; you'll certainly see a lot of very cute dogs and children.</li>
