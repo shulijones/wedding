@@ -83,8 +83,17 @@ layout: main
     }
 
     .extra-info {
+        border: 2px solid #F1E5AC;
+        border-radius: 10px;
+        padding: 5px 15px;
+    }
+
+    .extra-info:hover {
+        background-color: #776b27;
+    }
+
+    .extra-info a {
         color: #F1E5AC;
-        text-transform: lowercase;
         font-style: italic;
     }
 
@@ -132,7 +141,7 @@ layout: main
                     <br>
                     <span>Ceremony begins &mdash; 3:45 pm</span>
                     <br><br>
-                    <span class="extra-info">TODO RSVP</span>
+                    <span class="extra-info"><a href="/rsvp">RSVP &#8594;</a></span>
                 </div>
             </div>
             <div class="main-text-block">
