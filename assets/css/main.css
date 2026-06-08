@@ -33,7 +33,7 @@ a:hover {
 }
 
 .nicelink:visited {
-    color: #a916a9ff
+    color: rgb(230, 113, 230);
 }
 
 /* Makes the front page photo go to the left of the text instead of above it */

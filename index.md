@@ -84,17 +84,18 @@ layout: main
 
     .extra-info {
         border: 2px solid #F1E5AC;
+        background-color: rgba(0,0,0,0);
         border-radius: 10px;
         padding: 5px 15px;
+        color: #F1E5AC;
+        font-style: italic;
+        font-family: inherit;
+        font-size: 18px;
     }
 
     .extra-info:hover {
-        background-color: #776b27;
-    }
-
-    .extra-info a {
-        color: #F1E5AC;
-        font-style: italic;
+        background-color: #F1E5AC;
+        color: #550000;
     }
 
     .main-text-block-title {
@@ -141,7 +142,7 @@ layout: main
                     <br>
                     <span>Ceremony begins &mdash; 3:45 pm</span>
                     <br><br>
-                    <span class="extra-info"><a href="/rsvp">RSVP &#8594;</a></span>
+                    <button class="extra-info" onclick="location.href='/rsvp';">RSVP  &#8594;</button>
                 </div>
             </div>
             <div class="main-text-block">

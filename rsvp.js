@@ -23,7 +23,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
     .then(json => {
       var idAndNames = json.data;
       if (idAndNames === "Name not found") {
-        document.getElementById('output').innerHTML = `<div>Couldn't find guest name.</div>`;
+        document.getElementById('output').innerHTML = `<div>Couldn't find guest name &mdash; please double-check and try again.</div>`;
       } else if (idAndNames === "Already RSVPd") {
         document.getElementById('output').innerHTML = `<div>This guest has already submitted an RSVP.</div>`;
       } else {
@@ -36,10 +36,10 @@ document.getElementById('form').addEventListener('submit', function (event) {
 });
 
 function getEventRsvpButtons(name) {
-  return `<div>
-  I'll be there! <input type="radio" name="${name}" id="yes-${name}" /><br>
-  Not sure yet <input type="radio" name="${name}" id="maybe-${name}" /><br>
-  Can't make it <input type="radio" name="${name}" id="no-${name}" /><br>
+  return `<div class="radios">
+  <label>I'll be there! <input type="radio" name="${name}" id="yes-${name}" /></label><br>
+  <label>Not sure yet <input type="radio" name="${name}" id="maybe-${name}" /></label><br>
+  <label>Can't make it <input type="radio" name="${name}" id="no-${name}" /></label><br>
   </div>`
 }
 
@@ -62,20 +62,26 @@ function create_rsvpPage1(idAndNames) {
 
   // Write HTML and checkboxes for each person
   document.getElementById('entireForm').innerHTML = `
-      <div>Will you be able to celebrate with us?<br><br>
+      <div><span class="form-text">Will you be able to celebrate with us?</span><br>
+      <img src="./photo/flourish.png" style="width:75px"><br>
       ${data.map(
-    person => `${person.name}:<br>
-      I'll be there! <input type="radio" name="rsvp-${person.id}" id="1-rsvp-${person.id}" /><br/>
-      I won't be there <input type="radio" name="rsvp-${person.id}" id="0-rsvp-${person.id}" /><br/>
+    person => `<span class="guest-name">${person.name}:</span><br>
+      <div class="radios">
+      <label>I'll be there! <input type="radio" name="rsvp-${person.id}" id="1-rsvp-${person.id}" /></label><br/>
+      <label>I won't be there <input type="radio" name="rsvp-${person.id}" id="0-rsvp-${person.id}" /></label><br/>
+      </div>
       Any dietary restrictions? <input type="text" id="diet-${person.id}" /><br/><br/>`
     ).join('')}
-      Please give us an email address we can use to contact you about the wedding. You can put multiple emails if you'd like &mdash; please separate them with commas. <input type="text" id="email" /><br><br>
-      We know you might not be sure yet, but we'd love a general sense of if you'll be able to make it to the events we're planning. (See the Schedule for more details.)<br>
-      Thursday night Exploratorium: ${getEventRsvpButtons("explor")}<br>
-      Friday afternoon brewery: ${getEventRsvpButtons("brewery")}<br>
-      Sunday morning brunch at our house: ${getEventRsvpButtons("brunch")}<br>
-      Anything else you'd like to tell us? <input type="text" id="extra" />
-      <button id="submit">Submit</button>
+      <img src="./photo/flourish.png" style="width:75px">
+      Please give us an email address we can use to contact you about the wedding. You can put multiple emails if you'd like &mdash; please separate them with commas.
+      <input type="text" id="email" style="width:70%"/><br><br>
+      We know you might not be sure yet, but we'd love a general sense of if you'll be able to make it to the events we're planning.
+      (See the Schedule for more details.)<br><br>
+      <span class="event-name">Thursday from 6-10 pm: Exploratorium after Dark (18+)</span>${getEventRsvpButtons("explor")}<br>
+      <span class="event-name">Friday from 2-4 pm: TODO brewery</span>${getEventRsvpButtons("brewery")}<br>
+      <span class="event-name">Sunday from 10:30 am onwards: Brunch at our house</span>${getEventRsvpButtons("brunch")}<br>
+      Anything else you'd like to tell us? <input type="text" id="extra" /><br>
+      <button id="submit" type="submit">Submit</button>
       <div id="form-output"></div>
       </div>
   `;
