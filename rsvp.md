@@ -14,6 +14,16 @@ layout: main
     max-width: 98%;
   }
 
+  #form-inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-section {
+    margin: 10px 0px;
+  }
+
   .guest-name {
     font-weight: 700;
   }
@@ -52,7 +62,7 @@ layout: main
     padding: 5px;
     appearance: none;
     border: none;
-    background-color: rgba(256,256,256,0.85);
+    background-color: rgba(256,256,256,0.92);
   }
 
   button[type="submit"] {
@@ -84,14 +94,22 @@ layout: main
       margin-left: 4%;
     }
 
+    .form-section {
+      width: 95%;
+    }
+
+    #name-container {
+      margin: 10px 0px;
+    }
+
     input[type="text"] {
       margin: 5px;
     }
 
-
     .radios {
-      width: 50%;
+      width: 60%;
       margin-left: 6%;
+      margin-bottom: 10px;
       text-align: right;
     }
   }
@@ -104,12 +122,16 @@ layout: main
       margin-left: 20%;
     }
 
+    .form-section {
+      width: 85%;
+    }
+
     input[type="text"] {
       margin: 10px 5px;
     }
 
     .radios {
-      width: 30%;
+      width: 40%;
       margin-left: 6%;
       text-align: right;
     }
@@ -120,10 +142,10 @@ layout: main
   <div id="form-container">
     <div id="entireForm">
       <form id="form" style="display:flex;flex-direction:column;align-items:center;text-align:center;">
-        We'd like to hear from you by TODO.<br>
+        We'd like to hear from you by TODO. Especially if you already know you're not coming, it would really help with our planning &mdash; thank you!<br>
         <img src="./photo/flourish.png" style="width:75px"><br>
         Look up your invitation:
-        <div>
+        <div id="name-container">
             <input name="fname" type="text" placeholder="First name">
             <input name="lname" type="text" placeholder="Last name">
         </div>

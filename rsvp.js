@@ -62,25 +62,25 @@ function create_rsvpPage1(idAndNames) {
 
   // Write HTML and checkboxes for each person
   document.getElementById('entireForm').innerHTML = `
-      <div><span class="form-text">Will you be able to celebrate with us?</span><br>
+      <div id="form-inner-container"><span class="form-text">Will you be able to celebrate with us?</span><br>
       <img src="./photo/flourish.png" style="width:75px"><br>
       ${data.map(
-    person => `<span class="guest-name">${person.name}:</span><br>
+    person => `<div class="form-section"><span class="guest-name">${person.name}:</span><br>
       <div class="radios">
       <label>I'll be there! <input type="radio" name="rsvp-${person.id}" id="1-rsvp-${person.id}" /></label><br/>
       <label>I won't be there <input type="radio" name="rsvp-${person.id}" id="0-rsvp-${person.id}" /></label><br/>
       </div>
-      Any dietary restrictions? <input type="text" id="diet-${person.id}" /><br/><br/>`
+      Any dietary restrictions? <input type="text" id="diet-${person.id}" /></div><br/><br/>`
     ).join('')}
       <img src="./photo/flourish.png" style="width:75px">
-      Please give us an email address we can use to contact you about the wedding. You can put multiple emails if you'd like &mdash; please separate them with commas.
-      <input type="text" id="email" style="width:70%"/><br><br>
+      <div class="form-section">Please give us an email address we can use to contact you about the wedding. You can put multiple emails if you'd like &mdash; please separate them with commas.
+      <input type="text" id="email" style="width:70%"/></div><br><br>
       We know you might not be sure yet, but we'd love a general sense of if you'll be able to make it to the events we're planning.
       (See the Schedule for more details.)<br><br>
-      <span class="event-name">Thursday from 6-10 pm: Exploratorium after Dark (18+)</span>${getEventRsvpButtons("explor")}<br>
-      <span class="event-name">Friday from 2-4 pm: TODO brewery</span>${getEventRsvpButtons("brewery")}<br>
-      <span class="event-name">Sunday from 10:30 am onwards: Brunch at our house</span>${getEventRsvpButtons("brunch")}<br>
-      Anything else you'd like to tell us? <input type="text" id="extra" /><br>
+      <div class="form-section"><span class="event-name">Thursday from 6-10 pm: Exploratorium after Dark (18+)</span>${getEventRsvpButtons("explor")}</div><br>
+      <div class="form-section"><span class="event-name">Friday from 2-4 pm: TODO brewery</span>${getEventRsvpButtons("brewery")}</div><br>
+      <div class="form-section"><span class="event-name">Sunday from 10:30 am onwards: Brunch at our house</span>${getEventRsvpButtons("brunch")}</div><br>
+      <div class="form-section">Anything else you'd like to tell us? <input type="text" id="extra" /></div><br>
       <button id="submit" type="submit">Submit</button>
       <div id="form-output"></div>
       </div>
