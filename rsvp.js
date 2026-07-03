@@ -1,5 +1,21 @@
+function styleSubmitButtonNormally(name) {
+  document.querySelector(name).style.backgroundColor = "#0000";
+  document.querySelector(name).style.color = "#F1E5AC";
+    document.querySelector(".loader").style.display = "none";
+}
+
+function styleSubmitButtonForLoading(name) {
+  document.querySelector(name).style.backgroundColor = "#a89d6b";
+  document.querySelector(name).style.borderColor = "#bab081";
+  document.querySelector(name).style.color = "#550000";
+  document.querySelector(".loader").style.display = "block";
+}
+
 document.getElementById('form').addEventListener('submit', function (event) {
   event.preventDefault();
+
+  styleSubmitButtonForLoading("#continue");
+
   var errormsg = `<div>Something went wrong. Check your internet connection and try again. If this persists, you can just send Shuli and Evan your RSVP directly.</div>`;
   var fname = this.elements.fname.value;
   var lname = this.elements.lname.value;
@@ -25,6 +41,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
       var idAndNames = json.data;
       console.log('ids ', idAndNames);
       if (idAndNames.status === "Name not found") {
+        styleSubmitButtonNormally("#continue");
         document.getElementById('output').innerHTML = `<div>Couldn't find guest name &mdash; please double-check and try again.</div>`;
       } else {
         console.log('info ', json.info);
@@ -32,8 +49,10 @@ document.getElementById('form').addEventListener('submit', function (event) {
       }
     })
     .catch(error => {
+      styleSubmitButtonNormally("#continue");
       document.getElementById('output').innerHTML = errormsg;
     });
+
 });
 
 function getEventRsvpButtons(name, alreadyRsvpdInfo) {
@@ -80,8 +99,8 @@ function create_rsvpPage1(idAndNames, alreadyRsvpdInfo) {
   });
 
   const rsvpd = alreadyRsvpdInfo.length > 0;
-  const openingMessage = rsvpd ? 
-    "You already RSVPd! Here's what we have from you &mdash; feel free to edit it and resubmit if something has changed." 
+  const openingMessage = rsvpd ?
+    "You already RSVP'd! Here's what we have from you &mdash; feel free to edit it and resubmit if something has changed."
     : "Will you be able to celebrate with us?";
 
   // Write HTML and checkboxes for each person
@@ -105,21 +124,40 @@ function create_rsvpPage1(idAndNames, alreadyRsvpdInfo) {
       <div class="form-section"><span class="event-name">Friday from 2-4 pm: TODO brewery</span>${getEventRsvpButtons("brewery", alreadyRsvpdInfo)}</div><br>
       <div class="form-section"><span class="event-name">Sunday from 10:30 am onwards: Brunch at our house</span>${getEventRsvpButtons("brunch", alreadyRsvpdInfo)}</div><br>
       <div class="form-section">Anything else you'd like to tell us? <input type="text" value="${rsvpd ? escapeStr(alreadyRsvpdInfo[0][7]) : ''}" id="extra" /></div><br>
-      <button id="submit" type="submit">Submit</button>
+      <div class="submit-container"><button id="submit" type="submit">Submit</button><div class="loader"></div></div>
       <div id="form-output"></div>
       </div>
   `;
 
   // Submit button code
   document.getElementById('submit').addEventListener('click', () => {
+    var requiredQsCompleted = true;
     data.forEach(person => {
-      person.attending = document.querySelector(`input[name="rsvp-${person.id}"]:checked`).id.split('-')[0]
+      var attending = document.querySelector(`input[name="rsvp-${person.id}"]:checked`);
+      if (attending === null) {
+        // Didn't fill out the option
+        document.getElementById('form-output').innerHTML = `<div>Not yet submitted &mdash; please indicate whether each guest will or will not be attending.</div>`;
+        requiredQsCompleted = false;
+        return;
+      }
+      person.attending = attending.id.split('-')[0];
       person.diet = document.getElementById(`diet-${person.id}`).value;
     });
+    var email = document.getElementById("email").value;
+    if (requiredQsCompleted && !email) {
+       document.getElementById('form-output').innerHTML = `<div>Not yet submitted &mdash; please give us an email address we can use to contact you.</div>`;
+    }
+    if (!requiredQsCompleted || !email) {
+      return;
+    }
     eventData = [];
     for (event of ["explor", "brewery", "brunch"]) {
-      const attendingStr = document.querySelector(`input[name="${event}"]:checked`).id.split('-')[0];
-      const attendingVal = attendingStr === 'yes' ? 1 : (attendingStr === 'maybe' ? 0.5 : 0);
+      var attending = document.querySelector(`input[name="${event}"]:checked`);
+      var attendingVal = 0.5;
+      if (attending !== null) {
+        const attendingStr = attending.id.split('-')[0];
+        attendingVal = attendingStr === 'yes' ? 1 : (attendingStr === 'maybe' ? 0.5 : 0);
+      }
       eventData.push({
         attending: attendingVal
       })
@@ -127,7 +165,7 @@ function create_rsvpPage1(idAndNames, alreadyRsvpdInfo) {
     var response = {};
     response.data = data;
     response.eventData = eventData;
-    response.email = document.getElementById("email").value;
+    response.email = email;
     response.extra = document.getElementById("extra").value;
     // console.log(response);
     submitForm(response);
@@ -138,6 +176,7 @@ function create_rsvpPage1(idAndNames, alreadyRsvpdInfo) {
 }
 
 function submitForm(data) {
+  styleSubmitButtonForLoading("#submit");
   const url = 'https://script.google.com/macros/s/AKfycbzLNuguRzjJq0dX43242RObKG0NkvRuGpe7XIVmMGTZboFY1WwBobd69TFHW1thGoc9/exec';
 
   fetch(url, {
@@ -149,17 +188,19 @@ function submitForm(data) {
   })
     .then(async response => {
       // Read the response text just like xhr.responseText
+      styleSubmitButtonNormally("#submit");
       const text = await response.text();
 
       // Check both status and the specific response string (equivalent to xhr.onload)
       if (response.status === 200 && text === 'Success') {
-        document.getElementById('entireForm').innerHTML = `<div>Thanks for your RSVP!</div>`;
+        document.getElementById('entireForm').innerHTML = `<div>Thank you for your RSVP!</div>`;
       } else {
         document.getElementById('form-output').innerHTML = `<div>Something went wrong. Check your internet connection and try again. If this persists, you can just send Shuli and Evan your RSVP directly.</div>`;
         document.getElementById('submit').disabled = false;
       }
     })
     .catch(error => {
+      styleSubmitButtonNormally("#submit");
       document.getElementById('form-output').innerHTML = `<div>Something went wrong. Check your internet connection and try again. If this persists, you can just send Shuli and Evan your RSVP directly.</div>`;
       document.getElementById('submit').disabled = false;
     });

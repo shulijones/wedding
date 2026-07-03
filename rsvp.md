@@ -24,6 +24,29 @@ layout: main
     margin: 10px 0px;
   }
 
+  .submit-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+  }
+
+  .loader {
+    grid-column: 3;
+    display: none;
+    border: 5px solid #868686;
+    border-top: 5px solid #DCC353;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+    margin-left: 10px;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
   .guest-name {
     font-weight: 700;
   }
@@ -66,6 +89,7 @@ layout: main
   }
 
   button[type="submit"] {
+    grid-column: 2;
     border: 3px solid #F1E5AC;
     border-radius: 10px;
     padding: 5px 15px;
@@ -142,7 +166,7 @@ layout: main
   <div id="form-container">
     <div id="entireForm">
       <form id="form" style="display:flex;flex-direction:column;align-items:center;text-align:center;">
-        We'd like to hear from you by TODO. Especially if you already know you're not coming, it would really help with our planning &mdash; thank you!<br>
+        We'd like to hear from you by August 31st, 2026. Especially if you already know you're not coming, it would really help with our planning &mdash; thank you!<br>
         <img src="./photo/flourish.png" style="width:75px"><br>
         Look up your invitation:
         <div id="name-container">
@@ -150,7 +174,7 @@ layout: main
             <input name="lname" type="text" placeholder="Last name">
         </div>
         Enter your first and last name as it appears on your invitation.<br>If there is more than one name, enter any one of them.<br><br>
-        <button type="submit">Continue</button>
+        <div class="submit-container"><button id="continue" type="submit">Continue</button><div class="loader"></div></div>
         <div id="output"></div>
       </form>
       <script src="rsvp.js"></script>
