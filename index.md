@@ -96,6 +96,7 @@ layout: main
     .extra-info:hover {
         background-color: #F1E5AC;
         color: #550000;
+        cursor: pointer;
     }
 
     .main-text-block-title {

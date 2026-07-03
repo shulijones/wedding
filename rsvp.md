@@ -159,6 +159,10 @@ layout: main
       margin-left: 6%;
       text-align: right;
     }
+
+    #extra-text {
+      width: 100%;
+    }
   }
 </style>
 <div style="width:100%">
@@ -166,7 +170,7 @@ layout: main
   <div id="form-container">
     <div id="entireForm">
       <form id="form" style="display:flex;flex-direction:column;align-items:center;text-align:center;">
-        We'd like to hear from you by August 31st, 2026. Especially if you already know you're not coming, it would really help with our planning &mdash; thank you!<br>
+        <span>We'd like to hear from you by <b>August 31st, 2026</b>. If you're able to RSVP sooner, that would be really helpful for our planning (especially if you already know you unfortunately can't make it). Thank you!</span><br>
         <img src="./photo/flourish.png" style="width:75px"><br>
         Look up your invitation:
         <div id="name-container">
