@@ -38,9 +38,9 @@ layout: main
         </div>
         <h4 class="section-header">Friday, November 13th: Afternoon Brewery (all ages)</h4>
         <div class="section-item">
-            <span class="info">2-4 pm, TODO (<a class="nicelink" href="https://maps.app.goo.gl/vs3VthUnjE4HmACAA" target="_blank">Pier 15, Embarcadero at Green St., San Francisco</a>)</span>
+            <span class="info">2-4 pm, Southern Pacific Brewing (<a class="nicelink" href="https://maps.app.goo.gl/BrGGrig5LxuVDq6KA" target="_blank">620 Treat Ave., San Francisco</a>)</span>
             <br>
-            <p class="details">Join us for a drink or a snack (i.e. an excuse to hang out)! The brewery is open to all ages and will have beer & hard cider, non-alcoholic drinks, and food available for purchase. TODO mild help with directions</p>
+            <p class="details">Join us for a drink or a snack (i.e. an excuse to hang out)! The brewery is open to all ages and will have beer & hard cider, non-alcoholic drinks, and food available for purchase.</p>
             <br>
         </div>
         <h4 class="section-header">Sunday, November 15th: Brunch at Our House</h4>

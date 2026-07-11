@@ -17,8 +17,6 @@ layout: main
         </div>
         <h4 class="section-header">Should I bring a gift?</h4>
         <div class="section-item">We don't need or expect that you bring anything but yourself. We love you and your presence is a gift to us! We would also be delighted to receive a thoughtful card, art you've created, or anything we could keep to remind us fondly of you. We did put together a small registry because we know some of our loved ones value the tradition of giving gifts at a wedding. It really is small, so if giving physical gifts doesn't feel like an important tradition to you, please feel free to leave it for those who do! TODO link</div>
-        <h4 class="section-header">Can I RSVP? - TODO</h4>
-        <div class="section-item">We'll send out official invites in a few months with a link to an RSVP form, so no need for now. However, if you already know you won't be able to make it, we'd appreciate if you let us know!
         <h4 class="section-header">I have another question</h4>
         <div class="section-item">Feel free to reach out directly with any questions you have!</div>
     </div>
