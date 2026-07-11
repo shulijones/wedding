@@ -121,7 +121,7 @@ function create_rsvpPage1(idAndNames, alreadyRsvpdInfo) {
       <span>We know you might not be sure yet, but we'd love a general sense of if you'll be able to make it to the events we're planning.
       (See the <a class="nicelink" href="/schedule" target="_blank">Schedule</a> for more details.)</span><br><br>
       <div class="form-section"><span class="event-name">Thursday from 6-10 pm: Exploratorium after Dark (18+)</span>${getEventRsvpButtons("explor", alreadyRsvpdInfo)}</div><br>
-      <div class="form-section"><span class="event-name">Friday from 2-4 pm: Southern Pacific Brewing</span>${getEventRsvpButtons("brewery", alreadyRsvpdInfo)}</div><br>
+      <div class="form-section"><span class="event-name">Friday from 2-4 pm: Southern Pacific Brewing (all ages)</span>${getEventRsvpButtons("brewery", alreadyRsvpdInfo)}</div><br>
       <div class="form-section"><span class="event-name">Sunday from 10:30 am onwards: Brunch at our house</span>${getEventRsvpButtons("brunch", alreadyRsvpdInfo)}</div><br>
       <div class="form-section">Anything else you'd like to tell us? <input id="extra-text" type="text" value="${rsvpd ? escapeStr(alreadyRsvpdInfo[0][7]) : ''}" id="extra" /></div><br>
       <div class="submit-container"><button id="submit" type="submit">Submit</button><div class="loader"></div></div>

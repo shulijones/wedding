@@ -35,7 +35,7 @@ layout: main
             <br>
             <p class="details">Meet us at the Exploratorium, an interactive science museum with an adult-only night on Thursdays. We'll be wandering around the museum all evening, hopefully bumping into loved ones like you! Feel free to pop in for any portion of the night.<br>Tickets can be purchased at the door for $23. Drinks (alcoholic & non-alcoholic) are available for purchase at the museum.</p>
         </div>
-        <h4 class="section-header">Friday, November 13th: Afternoon Brewery (all ages)</h4>
+        <h4 class="section-header">Friday, November 13th: Afternoon at the Brewery (all ages)</h4>
         <div class="section-item">
             <span class="info">2-4 pm, Southern Pacific Brewing (<a class="nicelink" href="https://maps.app.goo.gl/BrGGrig5LxuVDq6KA" target="_blank">620 Treat Ave., San Francisco</a>)</span>
             <br>

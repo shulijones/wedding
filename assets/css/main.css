@@ -94,7 +94,7 @@ picture {
 
 @media (max-width: 767px) {
   .section-header {
-    padding: 16px 0 16px;
+    padding: 16px;
   }
 
   .section-item {

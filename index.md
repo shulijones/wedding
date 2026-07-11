@@ -22,7 +22,7 @@ layout: main
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 10px 40px;
+        margin: 10px 25px;
         text-align: center;
     }
 
