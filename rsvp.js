@@ -125,7 +125,7 @@ function create_rsvpPage1(idAndNames, alreadyRsvpdInfo) {
       <div class="form-section"><span class="event-name">Sunday from 10:30 am onwards: Brunch at our house</span>${getEventRsvpButtons("brunch", alreadyRsvpdInfo)}</div><br>
       <div class="form-section">Anything else you'd like to tell us? <input id="extra-text" type="text" value="${rsvpd ? escapeStr(alreadyRsvpdInfo[0][7]) : ''}" id="extra" /></div><br>
       <div class="submit-container"><button id="submit" type="submit">Submit</button><div class="loader"></div></div>
-      <div id="form-output"></div>
+      <div id="form-output">(Submitting might take a moment, thanks for your patience!)</div>
       </div>
   `;
 
