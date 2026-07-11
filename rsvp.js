@@ -82,6 +82,9 @@ function escapeStr(str) {
 }
 
 function create_rsvpPage1(idAndNames, alreadyRsvpdInfo) {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
   const data = [];
   const inputArray = idAndNames.split(',');
   const inviteID = inputArray.shift() || "NA";
