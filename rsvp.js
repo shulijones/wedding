@@ -166,7 +166,7 @@ function create_rsvpPage1(idAndNames, alreadyRsvpdInfo) {
     response.data = data;
     response.eventData = eventData;
     response.email = email;
-    response.extra = document.getElementById("extra").value;
+    response.extra = document.getElementById("extra-text").value;
     // console.log(response);
     submitForm(response);
 
