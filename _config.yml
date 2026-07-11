@@ -17,6 +17,7 @@ kramdown:
 
 menu_pages:
   home: /
+  rsvp: /rsvp
   schedule: /schedule
   qna: /q-a
   travel: /travel

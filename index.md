@@ -83,9 +83,20 @@ layout: main
     }
 
     .extra-info {
+        border: 2px solid #F1E5AC;
+        background-color: rgba(0,0,0,0);
+        border-radius: 10px;
+        padding: 5px 15px;
         color: #F1E5AC;
-        text-transform: lowercase;
         font-style: italic;
+        font-family: inherit;
+        font-size: 18px;
+    }
+
+    .extra-info:hover {
+        background-color: #F1E5AC;
+        color: #550000;
+        cursor: pointer;
     }
 
     .main-text-block-title {
@@ -127,10 +138,12 @@ layout: main
                 <h4 class="main-text-block-title">Wedding Day</h4>
                 <div class="main-text-block-datetime">
                     <span>November 14, 2026</span>
-                    <br>
-                    <span>~3:45 pm</span>
                     <br><br>
-                    <span class="extra-info">invites to follow</span>
+                    <span>Doors open &mdash; 3:15 pm</span>
+                    <br>
+                    <span>Ceremony begins &mdash; 3:45 pm</span>
+                    <br><br>
+                    <button class="extra-info" onclick="location.href='/rsvp';">RSVP  &#8594;</button>
                 </div>
             </div>
             <div class="main-text-block">

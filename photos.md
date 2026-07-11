@@ -30,14 +30,6 @@ layout: main
         }
     }
 
-    .nicelink {
-        color: 	#1760c6ff;
-    }
-
-    .nicelink:visited {
-        color: #a916a9ff
-    }
-
     .vertical {
         grid-row-start: span 2;
     }
