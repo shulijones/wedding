@@ -17,6 +17,8 @@ layout: main
         </div>
         <h4 class="section-header">Should I bring a gift?</h4>
         <div class="section-item">We don't need or expect that you bring anything but yourself. We love you and your presence is a gift to us! We would also be delighted to receive a thoughtful card, art you've created, or anything we could keep to remind us fondly of you. We did put together a small registry because we know some of our loved ones value the tradition of giving gifts at a wedding. It really is small, so if giving physical gifts doesn't feel like an important tradition to you, please feel free to leave it for those who do!<br>Here's the link: <a href="https://www.zola.com/registry/shuliandevan" target="_blank" class="nicelink">https://www.zola.com/registry/shuliandevan</a></div>
+        <h4 class="section-header">Tell me more about your invitation design!</h4>
+        <div class="section-item">We liked the idea of an invite with lots of flowers, but kept feeling like all the templates we saw weren’t quite right. Then we had the idea of asking friends to draw flowers for us! The invitation you saw has flowers drawn by a variety of our friends in San Francisco - thank you to everyone who contributed a flower :)</div>
         <h4 class="section-header">I have another question</h4>
         <div class="section-item">Feel free to reach out directly with any questions you have!</div>
     </div>
