@@ -45,7 +45,7 @@ layout: main
         <div class="section-item">
             <span class="info">10:30 am - whenever, The Roost (<a class="nicelink" href="https://maps.app.goo.gl/3oB5iXzd8e5d15HK7" target="_blank">2655 Bryant St., San Francisco</a>)</span>
             <br>
-            <p class="details">Come visit our house, commonly known as The Roost, for some brunch and to meet the namesake chickens! We'll start at around 10:30am and will be hanging out into the mid-afternoon - stop by whenever works for you! Light brunch will be provided (think bagels, fruit, pastries...)</p>
+            <p class="details">Come visit our house, commonly known as The Roost, for some brunch and to meet the namesake chickens! We'll start at around 10:30am and will be hanging out into the mid-afternoon - stop by whenever works for you! Light brunch will be provided (think bagels, fruit, pastries...) If you have a flight to catch, feel free to bring your luggage (we're also quite close to the airport by car).</p>
         </div>
     </div>
 </div>
