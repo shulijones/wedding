@@ -5,16 +5,6 @@ layout: main
 <div>
 <link rel="stylesheet" type="text/css" href="./assets/css/main.css"/>
     <div>
-    <h4 class="section-header">Getting to the venue</h4>
-        <div class="section-item">
-        <p>The venue's address is <a class="nicelink" href="https://maps.app.goo.gl/MEYN9RKzAGHYZ4dB9" target="_blank">Piedmont Community Hall, 711 Highland Avenue, Piedmont, CA</a>. There are a few options for getting there:
-        <ul style="padding-left:35px">
-            <li>If you plan to drive, there is a parking lot (<a class="nicelink" href="https://maps.app.goo.gl/KUK5G7VR4EqoJMu78" target="_blank">here's the Google Maps pin</a>) as well as street parking available.</li>
-            <li>Another option is public transit: if you're coming from San Francisco, you can take BART (the Bay Area subway system) to the 12th St. Oakland stop, then catch the 88 bus.</li>
-            <li>Rideshares like Lyft or Uber are also easy to get in this area; you can take a longer one from wherever you're staying or a shorter one from the 12th St. Oakland BART stop if you're coming from BART.</li>
-        </ul>
-        </p>
-        </div>
         <h4 class="section-header">Getting to the Bay Area</h4>
         <div class="section-item">
         If you're traveling, we'd recommend flying into either San Francisco International Airport (SFO) or Oakland Airport (OAK). Both are reasonably convenient to the wedding venue location of Piedmont and to the city of San Francisco where we live. You can book a rental car if you'd like, but it's not necessary - both airports are connected to the BART subway system and the area has plenty of public transportation (plus, parking can often be tricky in the city).
@@ -23,6 +13,12 @@ layout: main
         <div class="section-item">
         <p>We live in the southeast part of San Francisco's Mission District (24th & Bryant). The wedding itself will be in Piedmont, across the Bay to the east of SF. Other wedding events will be sprinkled throughout SF (including at our house!)</p>
         <p>If you’re only in town for a short time, you may want to get a hotel in Piedmont or the neighboring city of Oakland; this will be closer to the venue but further from us in SF. If you'll be here for a little longer and want to come to attend some of the optional events before/after the wedding (or do some sightseeing), we recommend staying in San Francisco. Most hotels are downtown, and AirBnB can also be an option. If you pick a location that's close to a BART stop, you'll be able to easily move around the city. BART also goes across the water to the East Bay, just a short bus ride from the wedding venue.</p>
+        <h4 class="section-header">Who can I bring to the event?</h4>
+        <div class="section-item">
+        We are very lucky to love many more people than could possibly fit in our wedding venue. Your invitation envelope lists the members of your party who are invited, and your RSVP form should also indicate how many people we're expecting. If something doesn't seem right or you have questions, please reach out!
+        </div>
+         <h4 class="section-header">Tell me more about your invitation design!</h4>
+        <div class="section-item">We liked the idea of an invite with lots of flowers, but kept feeling like all the templates we saw weren’t quite right. Then we had the idea of asking friends to draw flowers for us! The invitation you saw has flowers drawn by a variety of our friends in San Francisco - thank you to everyone who contributed a flower :)</div>
         <h4 class="section-header">Things to do in the city</h4>
         <div class="section-item">
         <p>If you have extra time to spend in the area, here are some places we love!</p>
@@ -44,5 +40,7 @@ layout: main
                 <li>SF MoMA &mdash; We're suckers for a Museum of Modern Art in any city, and although we've been to the SFMoMA many times, there's always something new and fun to look at.</li>
             </ul>  
         </div>
+                <h4 class="section-header">I have another question</h4>
+        <div class="section-item">Feel free to reach out directly with any questions you have!</div>
     </div>
 </div>

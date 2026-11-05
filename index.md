@@ -139,7 +139,7 @@ layout: main
                 <div class="main-text-block-datetime">
                     <span>November 14, 2026</span>
                     <br><br>
-                    <button class="extra-info" onclick="location.href='/rsvp';">RSVP  &#8594;</button>
+                    <button class="extra-info" onclick="location.href='/q-a';">Day-of info  &#8594;</button>
                                         <br><br>
                     <span>Doors open &mdash; 3:15 pm</span>
                     <br>
