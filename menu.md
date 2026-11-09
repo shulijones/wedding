@@ -39,10 +39,6 @@ layout: main
     <td><i>vegan, GF</i></td>
   </tr>
   <tr>
-    <td>Tofu-pumpkin curry</td>
-    <td><i>vegan, GF</i></td>
-  </tr>
-  <tr>
     <td>Garlic noodles with tofu &emsp;</td>
     <td><i>contains gluten, eggs</i></td>
   </tr>
