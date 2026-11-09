@@ -21,7 +21,7 @@ layout: main
     <td><i>contains gluten, dairy</i></td>
   </tr>
 </table>
-      <p><i>All items are nut-free.</i></p>
+      <p><i>All items are peanut-free.</i></p>
       </div>
     <h4 class="section-header">Dinner Buffet</h4>
             <div class="section-item">
@@ -51,14 +51,18 @@ layout: main
     <td><i>vegan, GF</i></td>
   </tr>
 </table>
-      <p><i>All items are nut-free.</i></p>
+      <p><i>All items are peanut-free.</i></p>
       </div>
     <h4 class="section-header">Dessert</h4>
       <div class="section-item">
       <table class="spaced-table">
   <tr>
-    <td>Assorted petit fours &emsp;</td>
+    <td>Assorted tartlets &emsp;</td>
     <td><i>nut-free, contains gluten, eggs, dairy</i></td>
+  </tr>
+  <tr>
+    <td>Assorted bars &emsp;</td>
+    <td><i>contains nuts, gluten, eggs, dairy</i></td>
   </tr>
   <tr>
     <td>Macarons</td>
